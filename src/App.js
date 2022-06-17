@@ -1,20 +1,25 @@
 import "./App.css";
 import { Routes, Route, Link, Outlet } from "react-router-dom";
 import Navbar from "./Pages/Navbar";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
 import Footer from "./Pages/Footer";
 import Contents from './Pages/Contents';
-import UnConst from './Pages/UnConst';
+import About from "./Pages/About";
+import PastProjects from "./Pages/PastProjects";
+import Comments from "./Pages/Comments";
+import Error from "./Pages/Error"
+import Contacts from "./Pages/Contacts";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<UnConst />}>
-        <Route index element={<UnConst />} />
-          <Route path="home" element={<UnConst />} />
-          <Route path="about" element={<UnConst />} />
+        <Route path="/" element={<Index />}>
+        <Route index element={<Contents />} />
+          <Route path="projects" element={<PastProjects />} />
+          <Route path="about" element={<About />} />
+          <Route path="comments" element={<Comments/>}/>
+          <Route path="contacts" element={<Contacts/>}/>
+          <Route path="*" element={<Error/>}/>
         </Route>
       </Routes>
     </div>
