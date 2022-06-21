@@ -1,9 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Footer() {
   return (
-    <div className="relative bg-inherit">
+    <div className="bg-inherit">
       <svg
         width="100%"
         height="100%"
@@ -45,6 +44,7 @@ function Footer() {
           transform="rotate(-180 720 200)"
         ></path>
       </svg>
+      <div className="flex justify-center text-neutral-400">Created with React, Tailwind, MongoDB, and a lot of npm packages</div>
     </div>
   );
 }

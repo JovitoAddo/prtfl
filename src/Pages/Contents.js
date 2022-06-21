@@ -1,12 +1,9 @@
 import React from "react";
 import funky from "../Assets/funky.png";
-import weirdo from "../Assets/weirdo.jpg"
+import weirdo from "../Assets/weirdo.jpg";
 function Contents() {
   return (
-    <div
-      className="flex flex-col content-center "
-      style={{ }}
-    >
+    <div className="flex flex-col content-center " style={{}}>
       <div className=" ">
         <div className="flex justify-center pt-3  ">
           <img
@@ -16,16 +13,16 @@ function Contents() {
           ></img>
         </div>
         <div className="container mx-auto text-white grid pt-4  ">
-          <div>
-            Cillum officia dolor cupidatat quis aute non esse culpa pariatur
-            minim Lorem. Mollit sit commodo minim ex aute dolor laboris id elit
-            cupidatat quis quis. Nostrud aliquip aliqua laboris ut in eiusmod
-            mollit. Sunt veniam consequat dolore Lorem voluptate irure enim ut.
-            Aliquip dolor in duis non ea amet excepteur excepteur commodo.
-            Adipisicing occaecat culpa veniam pariatur consectetur excepteur
-            laborum.
-          </div>
-          
+          <p>
+            what am i suppose to write here? Dolor non velit voluptate ad amet
+            ut in cillum ad eiusmod sit proident ullamco fugiat. Laborum nostrud
+            elit cillum fugiat amet commodo ullamco officia dolor cupidatat.
+            Sunt Lorem ex tempor laborum incididunt. Ad reprehenderit esse
+            excepteur commodo ex qui id et Lorem. Et aliquip duis do ex
+            voluptate qui proident laboris laboris minim officia voluptate ut.
+            Minim labore ullamco aute eiusmod. Consequat ut et ipsum nostrud
+            dolor dolor qui id.
+          </p>
         </div>
       </div>
       <svg
@@ -44,7 +41,7 @@ function Contents() {
           class="transition-all duration-300 ease-in-out delay-150 path-0"
         ></path>
       </svg>
-      <p style={{backgroundColor:"#4b5870" }}>
+      <p style={{ backgroundColor: "#4b5870" }}>
         Magna velit occaecat ullamco minim magna est nisi aliquip. Cillum aliqua
         do dolore et velit deserunt culpa nisi mollit. Amet sunt laborum est non
         reprehenderit fugiat adipisicing duis mollit enim anim sint qui. Sunt
