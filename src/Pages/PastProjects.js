@@ -185,7 +185,7 @@ function PastProjects() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-w-md border border-stone-800 transform overflow-hidden rounded-2xl bg-slate-700 p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Panel className="w-full max-w-md border border-cust3 transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
                       className="text-lg font-medium leading-6 text-cust1"
@@ -193,7 +193,7 @@ function PastProjects() {
                       PitchPls! DISCLAIMER
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-sm text-stone-400">
+                      <p className="text-sm text-cust1">
                         This fullstack Website have high dependency with the
                         restful API. but at the time it's created, heroku is
                         having a problem with upload and my team can't upload
@@ -210,14 +210,14 @@ function PastProjects() {
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-gray-400 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
                         onClick={newTab2}
                       >
                         Netlify Link
                       </button>
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-gray-400 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
                         onClick={newTab}
                       >
                         Youtube Link
@@ -256,7 +256,7 @@ function PastProjects() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full border border-stone-800 max-w-md transform overflow-hidden rounded-2xl bg-slate-700 p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Panel className="w-full border border-cust3 max-w-md transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
                       className="text-lg font-medium leading-6 text-cust1"
@@ -264,7 +264,7 @@ function PastProjects() {
                       CatLuv
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-sm text-stone-400">
+                      <p className="text-sm text-cust1">
                         A single-page frontend project, that created with React,
                         Bootstrap, external API, and considerable time limit.
                         <p>
@@ -278,14 +278,14 @@ function PastProjects() {
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-gray-400 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
                         onClick={newTab2C}
                       >
                         Netlify Link
                       </button>
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-gray-400 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
                         onClick={newTabC}
                       >
                         Youtube Link
@@ -324,7 +324,7 @@ function PastProjects() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full border border-stone-800 max-w-md transform overflow-hidden rounded-2xl bg-slate-700 p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Panel className="w-full border border-cust3 max-w-md transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
                       className="text-lg font-medium leading-6 text-cust1"
@@ -332,7 +332,7 @@ function PastProjects() {
                       Haku Library RESTful API
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-sm text-stone-400">
+                      <p className="text-sm text-cust1">
                         A Restful API created using mongoDB, postman, nodeJS.
                         <p>
                           A RESTful API for library website for admin to add,
@@ -345,7 +345,7 @@ function PastProjects() {
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-gray-400 px-4 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 py-2 text-sm font-medium text-black hover:bg-gray-200 "
                         onClick={newTabR}
                       >
                         Netlify Link
@@ -384,7 +384,7 @@ function PastProjects() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full border border-stone-800 max-w-md transform overflow-hidden rounded-2xl bg-slate-700 p-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Panel className="w-full border border-cust3 max-w-md transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
                       className="text-lg font-medium leading-6 text-cust1"
@@ -392,7 +392,7 @@ function PastProjects() {
                       Buah Tangan
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-sm text-stone-400">
+                      <p className="text-sm text-cust1">
                         A simple HTML and CSS website, it's a first project that
                         my team created since learning frontend in a month. Half
                         of the content in this website dependent on a mockAPI
@@ -408,7 +408,7 @@ function PastProjects() {
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-gray-400 px-4 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 py-2 text-sm font-medium text-black hover:bg-gray-200 "
                         onClick={newTabB}
                       >
                         Netlify Link
