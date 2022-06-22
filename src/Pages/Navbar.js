@@ -11,8 +11,7 @@ export default function Example() {
   return (
     <Disclosure
       as="nav"
-      className="fixed sticky top-0 w-full bg-inherit z-50"
-      style={{ opacity: "1" }}
+      className="fixed sticky top-0 w-full bg-cust2  z-50"
     >
       {({ open }) => (
         <>
