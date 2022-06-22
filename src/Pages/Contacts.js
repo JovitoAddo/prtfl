@@ -1,5 +1,6 @@
 import { React, useState } from "react";
 import { Transition } from "@headlessui/react";
+import {motion} from "framer-motion"
 
 function Contacts() {
   const [showEmail, setShowEmail] = useState(false);
@@ -7,7 +8,10 @@ function Contacts() {
   const [showPhone, setShowPhone] = useState(false);
 
   return (
-    <div className="text-white" style={{ backgroundColor: "#4b5870" }}>
+    <motion.div className="text-white" style={{ backgroundColor: "#4b5870" }}
+    initial={{width:0}}
+    animate={{width:"100%"}}
+    exit={{x:window.innerWidth,transition:{duration: 0.1}}}>
       <div className=" pt-3 grid grid-rows-4">
         <div className="py-4 pr-6">
           <button
@@ -100,7 +104,7 @@ function Contacts() {
           </Transition>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

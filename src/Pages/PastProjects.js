@@ -5,6 +5,7 @@ import pitch from "../Assets/PitchPLS.png";
 import catluv from "../Assets/Catluv.png";
 import haku from "../Assets/restful.png";
 import { Dialog, Transition } from "@headlessui/react";
+import { motion } from "framer-motion";
 
 function PastProjects() {
   let [isOpen, setIsOpen] = useState(false);
@@ -73,9 +74,12 @@ function PastProjects() {
   }
 
   return (
-    <div
+    <motion.div
       className="grid justify-items-center grid-cols-1 gap-4 px-4 py-5 md:grid-cols-2"
       style={{ backgroundColor: "#4b5870" }}
+      initial={{ width: 0 }}
+      animate={{ width: "100%" }}
+      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
     >
       <div
         id="proj1"
@@ -173,15 +177,18 @@ function PastProjects() {
                   >
                     PitchPls! DISCLAIMER
                   </Dialog.Title>
-                  <div className="mt-2">
+                  <div className="mt-2 prose">
                     <p className="text-sm text-stone-400">
                       This fullstack Website have high dependency with the
-                      restful API. but at the time it's created, heroku is having a
-                      problem with upload and my team can't upload the API. so if
-                      you want to see how the website work, you could watch the
-                      presentation video.
-                      <p> Project Duration: 2 Week</p>
-                     
+                      restful API. but at the time it's created, heroku is
+                      having a problem with upload and my team can't upload the
+                      API. so if you want to see how the website work, you could
+                      watch the presentation video.
+                      <p>
+                        It's a crowdfunding website with tiktok like
+                        presentation.
+                      </p>
+                      <p> Project Duration: 2 Week </p>
                     </p>
                   </div>
 
@@ -241,10 +248,11 @@ function PastProjects() {
                   >
                     CatLuv
                   </Dialog.Title>
-                  <div className="mt-2">
+                  <div className="mt-2 prose">
                     <p className="text-sm text-stone-400">
                       A single-page frontend project, that created with React,
                       Bootstrap, external API, and considerable time limit.
+                      <p>An information website about cats with better presentation than wiki.</p>
                       <p>Project Duration: 2 Week</p>
                     </p>
                   </div>
@@ -305,9 +313,10 @@ function PastProjects() {
                   >
                     Haku Library RESTful API
                   </Dialog.Title>
-                  <div className="mt-2">
+                  <div className="mt-2 prose">
                     <p className="text-sm text-stone-400">
-                      A Restful API created using mongoDB.
+                      A Restful API created using mongoDB, postman, nodeJS.
+                      <p>A RESTful API for library website for admin to add, remove or edit data from database.</p>
                       <p>Project Duration: 2 Week</p>
                     </p>
                   </div>
@@ -361,12 +370,13 @@ function PastProjects() {
                   >
                     Buah Tangan
                   </Dialog.Title>
-                  <div className="mt-2">
+                  <div className="mt-2 prose">
                     <p className="text-sm text-stone-400">
                       A simple HTML and CSS website, it's a first project that
                       my team created since learning frontend in a month. Half
                       of the content in this website dependent on a mockAPI that
                       i accidentally delete.
+                      <p>An eCommerce website for buying regional stuff and food.</p>
                       <p>Project Duration: 5 days</p>
                     </p>
                   </div>
@@ -386,7 +396,7 @@ function PastProjects() {
           </div>
         </Dialog>
       </Transition>
-    </div>
+    </motion.div>
   );
 }
 
