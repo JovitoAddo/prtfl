@@ -12,7 +12,7 @@ export default function Example() {
     <Disclosure
       as="nav"
       className="fixed sticky top-0 w-full bg-inherit z-50"
-      style={{ opacity: "0.5" }}
+      style={{ opacity: "1" }}
     >
       {({ open }) => (
         <>
@@ -20,7 +20,7 @@ export default function Example() {
             <div className="relative flex items-center justify-between h-16 ">
               <div className="relative inset-y-0 left-0 flex items-center sm:hidden">
                 {/* BURGER MENU LOGO */}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-zinc-50 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-cust4 hover:text-cust4 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cust4">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -29,26 +29,27 @@ export default function Example() {
                   )}
                 </Disclosure.Button>
               </div>
+              {/* NAVBAR MENU FULLSCREEN */}
               <div className="flex-1 flex grow items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4 text-white">
+                  <div className="flex space-x-4 text-cust4">
                     <Link to="/">
-                      <div className=" px-2 py-2 hover:px-2 py-2 hover:text-zinc-50 hover:bg-slate-700 hover:rounded">
+                      <div className=" px-2 py-2 hover:px-2 py-2 hover:text-cust3 hover:rounded">
                         Home
                       </div>
                     </Link>
                     <Link to="projects">
-                      <div className="px-2 py-2 hover:px-2 py-2 hover:text-zinc-50 hover:bg-slate-700 hover:rounded">
+                      <div className="px-2 py-2 hover:px-2 py-2 hover:text-cust3 hover:rounded">
                         Past Projects
                       </div>
                     </Link>
                     <Link to="about">
-                      <div className="px-2 py-2 hover:px-2 py-2 hover:text-zinc-50 hover:bg-slate-700 hover:rounded">
+                      <div className="px-2 py-2 hover:px-2 py-2 hover:text-cust3 hover:rounded">
                         About Me
                       </div>
                     </Link>
                     <Link to="comments">
-                      <div className="px-2 py-2 hover:px-2 py-2 hover:text-zinc-50 hover:bg-slate-700 hover:rounded">
+                      <div className="px-2 py-2 hover:px-2 py-2 hover:text-cust3 hover:rounded">
                         Comments
                       </div>
                     </Link>
@@ -57,8 +58,8 @@ export default function Example() {
               </div>
 
               <div className="relative">
-                <Link to="contacts" className="text-white px-3" style={{}}>
-                  <div className="px-2 py-2 hover:px-2 py-2 hover:text-zinc-50 hover:bg-slate-700 hover:rounded ">
+                <Link to="contacts" className="text-cust4 px-3" style={{}}>
+                  <div className="px-2 py-2 hover:px-2 py-2 hover:text-cust3  hover:rounded ">
                     Contact Me
                   </div>
                 </Link>
@@ -67,33 +68,33 @@ export default function Example() {
           </div>
           {/* BURGER MENU  */}
           <Disclosure.Panel className="relative sm:hidden">
-            <div className="fixed px-2 pt-2 pb-3 space-y-1 w-2/5 text-zinc-50 focus: bg-slate-700 focus: rounded">
+            <div className="fixed px-2 pt-2 pb-3 space-y-1 w-2/5 text-cust4 focus: bg-cust2 focus: rounded">
               <Link to="/">
-                <div className="text-white px-3 py-2 hover:bg-slate-700 hover:text-zinc-50 px-3 py-2 rounded-md text-sm font-medium">
+                <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </div>
               </Link>
 
               <Link to="projects">
-                <div className="text-white px-3 py-2 hover:bg-slate-700 hover:text-zinc-50 px-3 py-2 rounded-md text-sm font-medium ">
+                <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 px-3 py-2 rounded-md text-sm font-medium ">
                   Past Projects
                 </div>
               </Link>
 
               <Link to="about">
-                <div className="text-white px-3 py-2 hover:bg-slate-700 hover:text-zinc-50 px-3 py-2 rounded-md text-sm font-medium ">
+                <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 px-3 py-2 rounded-md text-sm font-medium ">
                   About Me
                 </div>
               </Link>
 
               <Link to="comments">
-                <div className="text-white px-3 py-2 hover:bg-slate-700 hover:text-zinc-50 px-3 py-2 rounded-md text-sm font-medium ">
+                <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 px-3 py-2 rounded-md text-sm font-medium ">
                   Comments
                 </div>
               </Link>
 
               <Link to="contacts">
-                <div className="text-white px-3 py-2 hover:bg-slate-700 hover:text-zinc-50 px-3 py-2 rounded-md text-sm font-medium ">
+                <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 px-3 py-2 rounded-md text-sm font-medium ">
                   Contact Me
                 </div>
               </Link>
