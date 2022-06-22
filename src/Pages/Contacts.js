@@ -32,7 +32,7 @@ function Contacts() {
         <div className="py-4 pr-6">
           <button
             onClick={() => setShowEmail((showEmail) => !showEmail)}
-            className="w-1/3  py-2 pl-5 rounded-r-lg flex bg-cust3"
+            className="w-1/3  py-2 pl-5 rounded-r-lg flex bg-cust2"
             style={{ fontSize: "2vw" }}
           >
             Email ▼
@@ -45,7 +45,7 @@ function Contacts() {
             leave="transform transition ease-in-out duration-500 sm:duration-700"
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
-            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust3"
+            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2"
             style={{ fontSize: "3vw" }}
           >
             jovitoaddo@gmail.com
@@ -55,7 +55,7 @@ function Contacts() {
         <div className="py-4 pr-6">
           <button
             onClick={() => setShowPhone((showPhone) => !showPhone)}
-            className="w-1/3  py-2 pl-5 rounded-r-lg flex bg-cust3"
+            className="w-1/3  py-2 pl-5 rounded-r-lg flex bg-cust2"
             style={{  fontSize: "2vw" }}
           >
             Phone ▼
@@ -68,7 +68,7 @@ function Contacts() {
             leave="transform transition ease-in-out duration-500 sm:duration-700"
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
-            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust3"
+            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2"
             style={{ fontSize: "3vw" }}
           >
             (+62)81806016497
@@ -100,7 +100,7 @@ function Contacts() {
         <div className="pt-4 pr-6">
           <button
             onClick={() => setIsShowing((isShowing) => !isShowing)}
-            className="w-1/3  py-2 pl-5 rounded-r-lg flex bg-cust3"
+            className="w-1/3  py-2 pl-5 rounded-r-lg flex bg-cust2"
             style={{ fontSize: "2vw" }}
           >
             Take my CV ▼
@@ -113,7 +113,7 @@ function Contacts() {
             leave="transform transition ease-in-out duration-500 sm:duration-700"
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
-            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust3"
+            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2"
             style={{ fontSize: "3vw" }}
           >
             <a href='https://www.canva.com/design/DAFByh4U92A/pIGaHwLe1xnB665YiCKmkw/view?utm_content=DAFByh4U92A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' target='_blank'> Canva Link</a>
