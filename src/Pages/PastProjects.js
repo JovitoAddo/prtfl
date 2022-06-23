@@ -1,5 +1,4 @@
 import { React, useState, Fragment } from "react";
-import funky from "../Assets/funky.png";
 import buah from "../Assets/BuahTangan.png";
 import pitch from "../Assets/PitchPLS.png";
 import catluv from "../Assets/Catluv.png";
@@ -99,7 +98,7 @@ function PastProjects() {
         <div
           id="proj1"
           onClick={openModal}
-          className="grid justify-items-center relative mb-5 rounded w-auto h-auto "
+          className="grid justify-items-center relative mb-5 rounded w-auto h-auto text-cust2 hover:text-cust4 "
           style={{}}
         >
           <img
@@ -107,7 +106,7 @@ function PastProjects() {
             alt="something"
             className="rounded opacity-40 hover:opacity-100"
           ></img>
-          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-cust1 top-auto">
+          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-inherit top-auto">
             PitchPls!
           </h1>
         </div>
@@ -115,7 +114,7 @@ function PastProjects() {
         <div
           id="proj1"
           onClick={openModalC}
-          className="grid justify-items-center relative mb-5 rounded w-auto h-auto "
+          className="grid justify-items-center relative mb-5 rounded w-auto h-auto text-cust2 hover:text-cust4"
           style={{}}
         >
           <img
@@ -123,7 +122,7 @@ function PastProjects() {
             alt="something"
             className="rounded opacity-40 hover:opacity-100"
           ></img>
-          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-cust1 top-auto">
+          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-inherit top-auto">
             CatLuv
           </h1>
         </div>
@@ -131,7 +130,7 @@ function PastProjects() {
         <div
           id="proj1"
           onClick={openModalR}
-          className="grid justify-items-center relative mb-5 rounded w-auto h-auto "
+          className="grid justify-items-center relative mb-5 rounded w-auto h-auto text-cust2 hover:text-cust4"
           style={{}}
         >
           <img
@@ -139,7 +138,7 @@ function PastProjects() {
             alt="something"
             className="rounded opacity-40 hover:opacity-100"
           ></img>
-          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-cust1 top-auto">
+          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-inherit top-auto">
             HakuLib API
           </h1>
         </div>
@@ -147,7 +146,7 @@ function PastProjects() {
         <div
           id="proj1"
           onClick={openModalB}
-          className="grid justify-items-center relative mb-5 rounded w-auto h-auto "
+          className="grid justify-items-center relative mb-5 rounded w-auto h-auto text-cust2 hover:text-cust4"
           style={{}}
         >
           <img
@@ -155,7 +154,7 @@ function PastProjects() {
             alt="something"
             className="rounded opacity-40 hover:opacity-100"
           ></img>
-          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-cust1 top-auto">
+          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-inherit top-auto">
             BuahTangan
           </h1>
         </div>
@@ -210,17 +209,24 @@ function PastProjects() {
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-cust3 "
                         onClick={newTab2}
                       >
                         Netlify Link
                       </button>
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-cust3 "
                         onClick={newTab}
                       >
                         Youtube Link
+                      </button>
+                      <button
+                        type="button"
+                        className="absolute top-0 right-0 m-3 "
+                        onClick={closeModal}
+                      >
+                        ✖
                       </button>
                     </div>
                   </Dialog.Panel>
@@ -278,17 +284,24 @@ function PastProjects() {
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-cust3 "
                         onClick={newTab2C}
                       >
                         Netlify Link
                       </button>
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 m-2 py-2 text-sm font-medium text-black hover:bg-cust3 "
                         onClick={newTabC}
                       >
                         Youtube Link
+                      </button>
+                      <button
+                        type="button"
+                        className="absolute top-0 right-0 m-3 "
+                        onClick={closeModalC}
+                      >
+                        ✖
                       </button>
                     </div>
                   </Dialog.Panel>
@@ -345,10 +358,17 @@ function PastProjects() {
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-cust1 px-4 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 py-2 text-sm font-medium text-black hover:bg-cust3 "
                         onClick={newTabR}
                       >
                         Netlify Link
+                      </button>
+                      <button
+                        type="button"
+                        className="absolute top-0 right-0 m-3 "
+                        onClick={closeModalR}
+                      >
+                        ✖
                       </button>
                     </div>
                   </Dialog.Panel>
@@ -408,10 +428,17 @@ function PastProjects() {
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-cust1 px-4 py-2 text-sm font-medium text-black hover:bg-gray-200 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 py-2 text-sm font-medium text-black hover:bg-cust3 "
                         onClick={newTabB}
                       >
                         Netlify Link
+                      </button>
+                      <button
+                        type="button"
+                        className="absolute top-0 right-0 m-3 "
+                        onClick={closeModalB}
+                      >
+                        ✖
                       </button>
                     </div>
                   </Dialog.Panel>

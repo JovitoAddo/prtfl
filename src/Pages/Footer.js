@@ -44,7 +44,7 @@ function Footer() {
           transform="rotate(-180 720 200)"
         ></path>
       </svg>
-      <div className="flex justify-center text-neutral-400">
+      <div className="flex justify-center text-cust4">
         Created with React, Tailwind, and Google searches
       </div>
     </div>

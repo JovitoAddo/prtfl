@@ -1,5 +1,4 @@
 import React from "react";
-import funky from "../Assets/funky.png";
 import weirdo from "../Assets/weirdo.jpg";
 import { motion } from "framer-motion";
 import buah from "../Assets/BuahTangan.png";
@@ -17,11 +16,13 @@ function Contents() {
       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
     >
       <div className=" ">
+        {/* Photo */}
         <div className="flex justify-center pt-3  ">
           <img
             src={weirdo}
             className="rounded-full border-double border-8 border-cust3"
             style={{ height: "250px" }}
+            alt='A photograph of my face'
           ></img>
         </div>
         <div className="prose container mx-auto text-cust4 grid pt-4 text-center ">
@@ -89,7 +90,7 @@ function Contents() {
 
           <div className="carousel-inner relative w-5/6 mx-auto flex overflow-hidden">
             <div className="carousel-item active relative float-left w-full">
-              <img src={catluv} className="block w-full h-fit" />
+              <img src={catluv} className="block w-full h-fit" alt='A screenshot of Catluv website.' />
               <div className="carousel-caption hidden md:block absolute text-center">
                 <h5 className="text-xl">CatLuv</h5>
                 <p>
@@ -100,7 +101,7 @@ function Contents() {
             </div>
 
             <div className="carousel-item relative float-left w-full">
-              <img src={pitch} className="block w-full h-fit" />
+              <img src={pitch} className="block w-full h-fit" alt='A screenshot of PitchPls! website.' />
               <div className="carousel-caption hidden md:block absolute text-center">
                 <h5 className="text-xl">PitchPLS</h5>
                 <p>
@@ -111,7 +112,7 @@ function Contents() {
             </div>
 
             <div className="carousel-item relative float-left w-full">
-              <img src={haku} className="block w-full h-fit" />
+              <img src={haku} className="block w-full h-fit" alt='A screenshot of HakuLib RESTful API documentation.' />
               <div className="carousel-caption hidden md:block absolute text-center">
                 <h5 className="text-xl">Haku Library Restful API</h5>
                 <p>An API created with MongoDB.</p>
@@ -119,7 +120,7 @@ function Contents() {
             </div>
 
             <div className="carousel-item relative float-left w-full">
-              <img src={buah} className="block w-full h-fit" />
+              <img src={buah} className="block w-full h-fit" alt='A screenshot of Buah Tangan website.' />
               <div className="carousel-caption hidden md:block absolute text-center">
                 <h5 className="text-xl">Buah Tangan</h5>
                 <p>
