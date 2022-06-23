@@ -24,7 +24,7 @@ function Comments() {
           class="transition-all duration-300 ease-in-out delay-150 path-0"
         ></path>
       </svg>
-      <div className='bg-cust4 text-5xl text-center'>UNDER CONSTRUCTION</div>
+      <div className='bg-cust4 text-3xl text-center text-cust1'>UNDER CONSTRUCTION</div>
     </motion.div>
   );
 }

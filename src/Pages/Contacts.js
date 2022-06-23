@@ -116,7 +116,7 @@ function Contacts() {
             className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2"
             style={{ fontSize: "4vw" }}
           >
-            <a className=' hover:text-cust3' href='https://www.canva.com/design/DAFByh4U92A/pIGaHwLe1xnB665YiCKmkw/view?utm_content=DAFByh4U92A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' target='_blank'> Canva Link</a>
+            <a className=' hover:text-cust3' href='https://www.canva.com/design/DAFEaaSleSA/l-QdRSm6sqfqKsK4mJpN7g/view?utm_content=DAFEaaSleSA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' target='_blank'> Canva Link</a>
           </Transition>
         </div>
       </div>
