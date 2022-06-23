@@ -33,7 +33,7 @@ function Contacts() {
           <button
             onClick={() => setShowEmail((showEmail) => !showEmail)}
             className="w-1/3  py-2 pl-5 rounded-r-lg flex bg-cust2"
-            style={{ fontSize: "2vw" }}
+            style={{ fontSize: "6vw" }}
           >
             Email ▼
           </button>
@@ -45,8 +45,8 @@ function Contacts() {
             leave="transform transition ease-in-out duration-500 sm:duration-700"
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
-            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2"
-            style={{ fontSize: "3vw" }}
+            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2 cursor-default"
+            style={{ fontSize: "4vw" }}
           >
             jovitoaddo@gmail.com
           </Transition>
@@ -56,7 +56,7 @@ function Contacts() {
           <button
             onClick={() => setShowPhone((showPhone) => !showPhone)}
             className="w-1/3  py-2 pl-5 rounded-r-lg flex bg-cust2"
-            style={{  fontSize: "2vw" }}
+            style={{  fontSize: "6vw" }}
           >
             Phone ▼
           </button>
@@ -68,8 +68,8 @@ function Contacts() {
             leave="transform transition ease-in-out duration-500 sm:duration-700"
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
-            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2"
-            style={{ fontSize: "3vw" }}
+            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2 cursor-default"
+            style={{ fontSize: "4vw" }}
           >
             (+62)81806016497
           </Transition>
@@ -101,7 +101,7 @@ function Contacts() {
           <button
             onClick={() => setIsShowing((isShowing) => !isShowing)}
             className="w-1/3  py-2 pl-5 rounded-r-lg flex bg-cust2"
-            style={{ fontSize: "2vw" }}
+            style={{ fontSize: "4vw" }}
           >
             Take my CV ▼
           </button>
@@ -114,9 +114,9 @@ function Contacts() {
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
             className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2"
-            style={{ fontSize: "3vw" }}
+            style={{ fontSize: "4vw" }}
           >
-            <a href='https://www.canva.com/design/DAFByh4U92A/pIGaHwLe1xnB665YiCKmkw/view?utm_content=DAFByh4U92A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' target='_blank'> Canva Link</a>
+            <a className=' hover:text-cust3' href='https://www.canva.com/design/DAFByh4U92A/pIGaHwLe1xnB665YiCKmkw/view?utm_content=DAFByh4U92A&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' target='_blank'> Canva Link</a>
           </Transition>
         </div>
       </div>
