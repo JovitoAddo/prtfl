@@ -25,6 +25,7 @@ function Comments() {
         ></path>
       </svg>
       <div className='bg-cust4 text-3xl text-center text-cust1'>UNDER CONSTRUCTION</div>
+      <div className='bg-cust4 text-cust1 text-center'>This page supposed to be a comments page with login that i create with mongodb</div>
     </motion.div>
   );
 }

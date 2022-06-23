@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-
+import funky from "../Assets/funky.png";
+import { Link } from "react-router-dom";
 function About() {
   return (
     <motion.div
@@ -29,14 +30,32 @@ function About() {
         <div className="prose prose-xl mx-auto text-cust1">
           <h1 className="text-cust2">About Me ?</h1>
           <hr />
-          <p>
+          <p className="prose text-cust1 p-2 text-2xl">
             Hi, im Addo i like to learn and try new things, but it make me a
             jack of all trades and master of none. Im sociable enough to work
             well with a team, but also introverted enough so im fine working
             alone. I live in Ciputat South Tangerang, i prefer staying at home
             rather than going outside, but i will go if my friends invite me to
-            go somewhere. I dont really have a hobby other than watching
-            pro-wrestling or Tottenham Hotspur match
+            go somewhere. I dont really have a hobby other than watching movies
+            / series / pro-wrestling or playing video games.
+          </p>
+          <hr />
+          <div className="prose prose-xl grid justify-items-center">
+            <h2 className="text-cust1 pl-2">
+              I may not have real work experience yet, but look at this picture
+              of Funky Kong.
+            </h2>
+            <img src={funky} className="" />
+          </div>
+          <p className="pl-2">
+            If that picture interest you to hire me, click{" "}
+            <Link
+              to="/contacts"
+              className="text-cust2 hover:text-cust3"
+              style={{ textDecoration: "none" }}
+            >
+              this link to go to the contact page
+            </Link>
           </p>
         </div>
       </div>

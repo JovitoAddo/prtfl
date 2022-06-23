@@ -223,7 +223,7 @@ function PastProjects() {
                       </button>
                       <button
                         type="button"
-                        className="absolute top-0 right-0 m-3 "
+                        className="absolute top-0 right-0 m-3 text-cust1"
                         onClick={closeModal}
                       >
                         ✖
@@ -298,7 +298,7 @@ function PastProjects() {
                       </button>
                       <button
                         type="button"
-                        className="absolute top-0 right-0 m-3 "
+                        className="absolute top-0 right-0 m-3 text-cust1"
                         onClick={closeModalC}
                       >
                         ✖
@@ -365,7 +365,7 @@ function PastProjects() {
                       </button>
                       <button
                         type="button"
-                        className="absolute top-0 right-0 m-3 "
+                        className="absolute top-0 right-0 m-3 text-cust1"
                         onClick={closeModalR}
                       >
                         ✖
@@ -435,7 +435,7 @@ function PastProjects() {
                       </button>
                       <button
                         type="button"
-                        className="absolute top-0 right-0 m-3 "
+                        className="absolute top-0 right-0 m-3 text-cust1"
                         onClick={closeModalB}
                       >
                         ✖
