@@ -27,7 +27,7 @@ function Contents() {
         </div>
         <div className="prose container mx-auto text-cust4 grid pt-4 text-center ">
           <p>
-            My name is Jovito Addo, and im aspire to be an adult with jobs, or Fullstack developer /
+            My name is Jovito Addo, and im aspire to be an adult with job, or Fullstack developer /
             Frontend developer / Backend developer.
           </p>
         </div>
