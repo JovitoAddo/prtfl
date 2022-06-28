@@ -73,12 +73,13 @@ function PastProjects() {
   }
 
   return (
-    <motion.div
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    <div
+    id='projects'
+      // initial={{ width: 0 }}
+      // animate={{ width: "100%" }}
+      // exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
     >
-      <svg
+      {/* <svg
         width="100%"
         height="100%"
         id="svg"
@@ -93,7 +94,10 @@ function PastProjects() {
           fill="#90aacbff"
           class="transition-all duration-300 ease-in-out delay-150 path-0"
         ></path>
-      </svg>
+      </svg> */}
+      <div className="flex justify-center pb-3 text-5xl text-cust2 bg-cust4">
+        Past Projects
+      </div>
       <div className="grid justify-items-center grid-cols-1 gap-4 px-4 py-5 md:grid-cols-2 bg-cust4">
         <div
           id="proj1"
@@ -448,7 +452,7 @@ function PastProjects() {
           </Dialog>
         </Transition>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

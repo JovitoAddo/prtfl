@@ -22,8 +22,8 @@ function App() {
             <Route path="about" element={<About />} />
             <Route path="comments" element={<Comments />} />
             <Route path="contacts" element={<Contacts />} />
-            <Route path="*" element={<Error />} />
           </Route>
+          <Route path="*" element={<Error />} />
         </Routes>
       </AnimatePresence>
     </div>

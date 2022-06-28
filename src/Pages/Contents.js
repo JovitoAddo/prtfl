@@ -6,6 +6,9 @@ import pitch from "../Assets/PitchPLS.png";
 import catluv from "../Assets/Catluv.png";
 import haku from "../Assets/restful.png";
 import { Link } from "react-router-dom";
+import PastProjects from "./PastProjects";
+import Contacts from "./Contacts";
+import Certificate from "./Certificate";
 function Contents() {
   return (
     <motion.div
@@ -14,6 +17,7 @@ function Contents() {
       initial={{ width: 0 }}
       animate={{ width: "100%" }}
       exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+      id='#top'
     >
       <div className=" ">
         {/* Photo */}
@@ -22,13 +26,13 @@ function Contents() {
             src={weirdo}
             className="rounded-full border-double border-8 border-cust3"
             style={{ height: "250px" }}
-            alt='A photograph of my face'
+            alt="A photograph of my face"
           ></img>
         </div>
         <div className="prose container mx-auto text-cust4 grid pt-4 text-center ">
           <p>
-            My name is Jovito Addo, and im aspire to be an adult with job, or Fullstack developer /
-            Frontend developer / Backend developer.
+            My name is Jovito Addo, and im aspire to be an adult with job, or
+            Fullstack developer / Frontend developer / Backend developer.
           </p>
         </div>
       </div>
@@ -50,15 +54,10 @@ function Contents() {
         ></path>
       </svg>
       {/* PROJECT */}
-      <Link to="/projects">
-        <div className="flex justify-center pb-3 text-5xl text-cust2 hover:text-cust3 bg-cust4">
-          Past Projects
-        </div>
-      </Link>
-
       <div className="mx-auto min-w-full bg-cust4">
+        <PastProjects />
         {/* IMAGE CAROUSEL */}
-        <div
+        {/* <div
           id="carouselDarkVariant"
           className="carousel slide carousel-fade carousel-dark relative"
           data-bs-ride="carousel"
@@ -155,7 +154,13 @@ function Contents() {
             ></span>
             <span className="visually-hidden">Next</span>
           </button>
-        </div>
+        </div> */}
+      </div>
+      <div>
+        <Certificate/>
+      </div>
+      <div>
+        <Contacts/>
       </div>
     </motion.div>
   );

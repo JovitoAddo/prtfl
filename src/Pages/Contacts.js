@@ -8,11 +8,14 @@ function Contacts() {
   const [showPhone, setShowPhone] = useState(false);
 
   return (
-    <motion.div 
-    initial={{width:0}}
-    animate={{width:"100%"}}
-    exit={{x:window.innerWidth,transition:{duration: 0.1}}}>
-      <svg
+    <div 
+    id='contacts'
+    className='pt-5 bg-cust4'
+    // initial={{width:0}}
+    // animate={{width:"100%"}}
+    // exit={{x:window.innerWidth,transition:{duration: 0.1}}}
+     >
+      {/* <svg
         width="100%"
         height="100%"
         id="svg"
@@ -27,7 +30,8 @@ function Contacts() {
           fill="#90aacbff"
           class="transition-all duration-300 ease-in-out delay-150 path-0"
         ></path>
-      </svg>
+      </svg> */}
+      <p className='flex justify-center pb-3 text-5xl text-cust2 bg-cust4'>Contact Me</p>
       <div className=" pt-3 grid grid-rows-4 text-cust4 bg-cust4">
         <div className="py-4 pr-6">
           <button
@@ -120,7 +124,7 @@ function Contacts() {
           </Transition>
         </div>
       </div>
-    </motion.div>
+    </div>
   );
 }
 

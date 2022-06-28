@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Footer from "./Footer";
 
 function Error() {
   return (
@@ -36,6 +37,7 @@ function Error() {
           see my 404 page?
         </h2>
       </div>
+      <Footer/>
     </motion.div>
   );
 }

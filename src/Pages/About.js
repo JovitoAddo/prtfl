@@ -28,7 +28,7 @@ function About() {
       </svg>
       <div className="min-w-full pt-4 bg-cust4">
         <div className="prose prose-xl mx-auto text-cust1">
-          <h1 className="text-cust2">About Me ?</h1>
+          <h1 className="text-cust2">You're not supposed to be here</h1>
           <hr />
           <p className="prose text-cust1 p-2 text-2xl">
             Hi, im Addo i like to learn and try new things, but it make me a
@@ -42,7 +42,7 @@ function About() {
           <hr />
           <div className="prose prose-xl grid justify-items-center">
             <h2 className="text-cust1 pl-2">
-              I may not have real work experience yet, but look at this picture
+              You're not supposed to be here, look at this picture
               of Funky Kong.
             </h2>
             <img src={funky} className="" />

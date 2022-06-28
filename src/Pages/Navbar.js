@@ -1,7 +1,7 @@
 import { Fragment } from "react";
 import { Disclosure, Menu, Transition } from "@headlessui/react";
 import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
@@ -9,10 +9,7 @@ function classNames(...classes) {
 
 export default function Example() {
   return (
-    <Disclosure
-      as="nav"
-      className="fixed sticky top-0 w-full bg-cust2  z-50"
-    >
+    <Disclosure as="nav" className="fixed sticky top-0 w-full bg-cust2  z-50">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
@@ -32,32 +29,42 @@ export default function Example() {
               <div className="flex-1 flex grow items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4 text-cust4">
-                    <Link to="/">
+                    <Link to="#top">
                       <div className=" px-2 py-2 hover:px-2 py-2 hover:text-cust3 hover:rounded">
                         Home
                       </div>
                     </Link>
-                    <Link to="projects">
+                    <Link to="#projects" smooth>
                       <div className="px-2 py-2 hover:px-2 py-2 hover:text-cust3 hover:rounded">
                         Past Projects
                       </div>
                     </Link>
-                    <Link to="about">
+                    <Link to="#certificate" smooth>
+                      <div className="px-2 py-2 hover:px-2 py-2 hover:text-cust3 hover:rounded">
+                        Certificate
+                      </div>
+                    </Link>
+                    {/* <Link to="about">
                       <div className="px-2 py-2 hover:px-2 py-2 hover:text-cust3 hover:rounded">
                         About Me
                       </div>
-                    </Link>
-                    <Link to="comments">
+                    </Link> */}
+                    {/* <Link to="comments">
                       <div className="px-2 py-2 hover:px-2 py-2 hover:text-cust3 hover:rounded">
                         Comments
                       </div>
-                    </Link>
+                    </Link> */}
                   </div>
                 </div>
               </div>
 
               <div className="relative">
-                <Link to="contacts" className="text-cust4 px-3" style={{}}>
+                <Link
+                  to="#contacts"
+                  smooth
+                  className="text-cust4 px-3"
+                  style={{}}
+                >
                   <div className="px-2 py-2 hover:px-2 py-2 hover:text-cust3  hover:rounded ">
                     Contact Me
                   </div>
@@ -68,19 +75,19 @@ export default function Example() {
           {/* BURGER MENU  */}
           <Disclosure.Panel className="relative sm:hidden">
             <div className="fixed px-2 pt-2 pb-3 space-y-1 w-2/5 text-cust4 focus: bg-cust2 focus: rounded">
-              <Link to="/">
+              <Link to="#top">
                 <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 px-3 py-2 rounded-md text-sm font-medium">
                   Home
                 </div>
               </Link>
 
-              <Link to="projects">
+              <Link to="#projects" smooth>
                 <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 px-3 py-2 rounded-md text-sm font-medium ">
                   Past Projects
                 </div>
               </Link>
 
-              <Link to="about">
+              {/* <Link to="about">
                 <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 px-3 py-2 rounded-md text-sm font-medium ">
                   About Me
                 </div>
@@ -90,9 +97,15 @@ export default function Example() {
                 <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 px-3 py-2 rounded-md text-sm font-medium ">
                   Comments
                 </div>
+              </Link> */}
+
+              <Link to="#certificate" smooth>
+                <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 px-3 py-2 rounded-md text-sm font-medium ">
+                  Certificate
+                </div>
               </Link>
 
-              <Link to="contacts">
+              <Link to="#contacts" smooth>
                 <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 px-3 py-2 rounded-md text-sm font-medium ">
                   Contact Me
                 </div>
