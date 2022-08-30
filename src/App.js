@@ -8,13 +8,14 @@ import PastProjects from "./Pages/PastProjects";
 import Comments from "./Pages/Comments";
 import Error from "./Pages/Error";
 import Contacts from "./Pages/Contacts";
-import { AnimatePresence } from "framer-motion";
+import { useScroll, motion } from "framer-motion";
 
 function App() {
   const location = useLocation();
+  const { scrollYProgress } = useScroll();
+
   return (
     <div className="App">
-      <AnimatePresence>
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Index />}>
             <Route index element={<Contents />} />
@@ -25,7 +26,6 @@ function App() {
           </Route>
           <Route path="*" element={<Error />} />
         </Routes>
-      </AnimatePresence>
     </div>
   );
 }

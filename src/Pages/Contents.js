@@ -1,40 +1,68 @@
 import React from "react";
 import weirdo from "../Assets/weirdo.jpg";
 import { motion } from "framer-motion";
-import buah from "../Assets/BuahTangan.png";
-import pitch from "../Assets/PitchPLS.png";
-import catluv from "../Assets/Catluv.png";
-import haku from "../Assets/restful.png";
-import { Link } from "react-router-dom";
+// import buah from "../Assets/BuahTangan.png";
+// import pitch from "../Assets/PitchPLS.png";
+// import catluv from "../Assets/Catluv.png";
+// import haku from "../Assets/restful.png";
+// import { Link } from "react-router-dom";
 import PastProjects from "./PastProjects";
 import Contacts from "./Contacts";
 import Certificate from "./Certificate";
+import Projects from "./Projects";
+import Tilt from "react-vanilla-tilt";
+
 function Contents() {
   return (
     <motion.div
       className="flex flex-col content-center "
-      style={{}}
-      initial={{ width: 0 }}
-      animate={{ width: "100%" }}
-      exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
-      id='#top'
+
+      // initial={{ width: 0 }}
+      // animate={{ height: "100%" }}
+      // exit={{ y: window.innerHeight, transition: { duration: 0.1 } }}
+      // id="#top"
     >
       <div className=" ">
         {/* Photo */}
-        <div className="flex justify-center pt-3  ">
-          <img
-            src={weirdo}
-            className="rounded-full border-double border-8 border-cust3"
-            style={{ height: "250px" }}
-            alt="A photograph of my face"
-          ></img>
-        </div>
+
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            duration: 0.8,
+            delay: 0.5,
+            ease: [0, 0.71, 0.2, 1.01],
+          }}
+          className="flex justify-center pt-3  "
+        >
+          {/* <Tilt style={{ background: "white" }}> */}
+            <img
+              src={weirdo}
+              className=" border-8 border-cust3"
+              style={{ height: "250px" }}
+              alt="A photograph of my face"
+            ></img>
+          {/* </Tilt> */}
+        </motion.div>
+
         <div className="prose container mx-auto text-cust4 grid pt-4 text-center ">
-          <p>
-            My name is Jovito Addo, and im aspire to be an adult with job, or
-            Fullstack developer / Frontend developer / Backend developer.
-          </p>
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 3 } }}
+            className="text-cust4 text-4xl"
+            style={{ fontFamily: "Catamaran" }}
+          >
+            I am Jovito Addo, and I aspire to be a Fullstack Developer /
+            Frontend Developer / Backend Developer
+          </motion.div>
         </div>
+        {/* <div className="prose pt-5 text-center mx-auto text-md text-black">
+          Ex excepteur nisi mollit tempor occaecat pariatur eu officia proident
+          incididunt. Eiusmod irure enim dolor consectetur commodo consectetur
+          ipsum non est ipsum dolor. Occaecat aliqua nostrud reprehenderit
+          incididunt. Elit consectetur labore esse fugiat irure proident sunt
+          aliqua minim eiusmod.
+        </div> */}
       </div>
       {/* WAVE SEPARATOR */}
       <svg
@@ -54,8 +82,18 @@ function Contents() {
         ></path>
       </svg>
       {/* PROJECT */}
-      <div className="mx-auto min-w-full bg-cust4">
+      <div
+        // intial={{  opacity: 0 }}
+        // whileInView={{ opacity: 1 }}
+        // transition={{duration:3}}
+        className="mx-auto min-w-full bg-cust4"
+      >
+        <div className="flex justify-center pb-3 text-5xl text-cust2 bg-cust4">
+          Past Projects
+        </div>
         <PastProjects />
+
+        {/* <Projects/> */}
         {/* IMAGE CAROUSEL */}
         {/* <div
           id="carouselDarkVariant"
@@ -156,11 +194,17 @@ function Contents() {
           </button>
         </div> */}
       </div>
-      <div>
-        <Certificate/>
+      <div className="bg-cust4">
+        <p className="flex justify-center pb-3 text-5xl text-cust2">
+          Certificate
+        </p>
+        <Certificate />
       </div>
-      <div>
-        <Contacts/>
+      <div className="bg-cust4">
+        <p className="flex justify-center pb-3 text-5xl text-cust2 bg-cust4">
+          Contact Me
+        </p>
+        <Contacts />
       </div>
     </motion.div>
   );

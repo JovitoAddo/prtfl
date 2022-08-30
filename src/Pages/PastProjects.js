@@ -73,11 +73,13 @@ function PastProjects() {
   }
 
   return (
-    <div
-    id='projects'
-      // initial={{ width: 0 }}
-      // animate={{ width: "100%" }}
-      // exit={{ x: window.innerWidth, transition: { duration: 0.1 } }}
+    <motion.div
+      id="projects"
+      initial={{opacity:0}}
+      whileInView={{opacity:1}}
+      viewport={{ once: false, amount: 0.3 }}
+      transition={{ duration: 1 }}
+      className="bg-cust4"
     >
       {/* <svg
         width="100%"
@@ -95,9 +97,7 @@ function PastProjects() {
           class="transition-all duration-300 ease-in-out delay-150 path-0"
         ></path>
       </svg> */}
-      <div className="flex justify-center pb-3 text-5xl text-cust2 bg-cust4">
-        Past Projects
-      </div>
+      
       <div className="grid justify-items-center grid-cols-1 gap-4 px-4 py-5 md:grid-cols-2 bg-cust4">
         <div
           id="proj1"
@@ -452,7 +452,7 @@ function PastProjects() {
           </Dialog>
         </Transition>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

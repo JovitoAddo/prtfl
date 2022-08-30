@@ -26,7 +26,7 @@ function About() {
           class="transition-all duration-300 ease-in-out delay-150 path-0"
         ></path>
       </svg>
-      <div className="min-w-full pt-4 bg-cust4">
+      <div className="min-w-full pt-4 bg-cust4 dark:bg-black">
         <div className="prose prose-xl mx-auto text-cust1">
           <h1 className="text-cust2">You're not supposed to be here</h1>
           <hr />

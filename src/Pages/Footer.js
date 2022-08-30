@@ -45,7 +45,7 @@ function Footer() {
         ></path>
       </svg>
       <div className="flex justify-center text-cust4">
-        Created with React, Tailwind, and Google searches
+        Created with React, Tailwind, and a lot of NPM dependencies | 2022
       </div>
     </div>
   );

@@ -8,7 +8,11 @@ function Contacts() {
   const [showPhone, setShowPhone] = useState(false);
 
   return (
-    <div 
+    <motion.div
+    initial={{x:"-50vw"}}
+    whileInView={{x:"0vw"}}
+    viewport={{once:false, amount: 0.1}}
+    transition={{duration:1}}
     id='contacts'
     className='pt-5 bg-cust4'
     // initial={{width:0}}
@@ -31,13 +35,13 @@ function Contacts() {
           class="transition-all duration-300 ease-in-out delay-150 path-0"
         ></path>
       </svg> */}
-      <p className='flex justify-center pb-3 text-5xl text-cust2 bg-cust4'>Contact Me</p>
+      
       <div className=" pt-3 grid grid-rows-4 text-cust4 bg-cust4">
         <div className="py-4 pr-6">
           <button
             onClick={() => setShowEmail((showEmail) => !showEmail)}
             className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2"
-            style={{ fontSize: "5vw" }}
+            style={{ fontSize: "5vw", fontFamily:"Catamaran" }}
           >
             Email ▼
           </button>
@@ -50,7 +54,7 @@ function Contacts() {
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
             className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2 cursor-default"
-            style={{ fontSize: "4vw" }}
+            style={{ fontSize: "4vw", fontFamily:"Catamaran" }}
           >
             jovitoaddo@gmail.com
           </Transition>
@@ -60,7 +64,7 @@ function Contacts() {
           <button
             onClick={() => setShowPhone((showPhone) => !showPhone)}
             className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2"
-            style={{  fontSize: "5vw" }}
+            style={{  fontSize: "5vw", fontFamily:"Catamaran" }}
           >
             Phone ▼
           </button>
@@ -73,7 +77,7 @@ function Contacts() {
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
             className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2 cursor-default"
-            style={{ fontSize: "4vw" }}
+            style={{ fontSize: "4vw", fontFamily:"" }}
           >
             (+62)81806016497
           </Transition>
@@ -105,7 +109,7 @@ function Contacts() {
           <button
             onClick={() => setIsShowing((isShowing) => !isShowing)}
             className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2"
-            style={{ fontSize: "4vw" }}
+            style={{ fontSize: "4vw", fontFamily:"Catamaran" }}
           >
             Take my CV ▼
           </button>
@@ -118,13 +122,13 @@ function Contacts() {
             leaveFrom="translate-x-0"
             leaveTo="-translate-x-full"
             className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2"
-            style={{ fontSize: "4vw" }}
+            style={{ fontSize: "4vw", fontFamily:"Catamaran" }}
           >
-            <a className=' hover:text-cust3' href='https://www.canva.com/design/DAFEaaSleSA/l-QdRSm6sqfqKsK4mJpN7g/view?utm_content=DAFEaaSleSA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' target='_blank'> Canva Link</a>
+            <a className=' hover:text-cust3' style={{fontFamily:"Catamaran"}} href='https://www.canva.com/design/DAFEaaSleSA/l-QdRSm6sqfqKsK4mJpN7g/view?utm_content=DAFEaaSleSA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' target='_blank'> Canva Link</a>
           </Transition>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 
