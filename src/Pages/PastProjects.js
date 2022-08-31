@@ -420,7 +420,7 @@ function PastProjects() {
                         A simple HTML and CSS website, it's a first project that
                         my team created since learning frontend in a month. Half
                         of the content in this website dependent on a mockAPI
-                        that i accidentally delete.
+                        that accidentally got deleted.
                         <p>
                           An eCommerce website for buying regional stuff and
                           food.
