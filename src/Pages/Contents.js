@@ -1,5 +1,6 @@
 import React from "react";
 import weirdo from "../Assets/weirdo.jpg";
+import profile from "../Assets/profile-pic.png";
 import { motion } from "framer-motion";
 // import buah from "../Assets/BuahTangan.png";
 // import pitch from "../Assets/PitchPLS.png";
@@ -11,6 +12,8 @@ import Contacts from "./Contacts";
 import Certificate from "./Certificate";
 import Projects from "./Projects";
 import Tilt from "react-vanilla-tilt";
+import Counter from "../Features/counter/Counter";
+import PostList from "../Features/Posts/PostList";
 
 function Contents() {
   return (
@@ -35,14 +38,14 @@ function Contents() {
           }}
           className="flex justify-center pt-3  "
         >
-          {/* <Tilt style={{ background: "white" }}> */}
+          <Tilt style={{ background: "white" }}>
             <img
-              src={weirdo}
-              className=" border-8 border-cust3"
+              src={profile}
+              className=" border-8 border-cust4"
               style={{ height: "250px" }}
               alt="A photograph of my face"
             ></img>
-          {/* </Tilt> */}
+          </Tilt>
         </motion.div>
 
         <div className="prose container mx-auto text-cust4 grid pt-4 text-center ">
@@ -206,6 +209,12 @@ function Contents() {
         </p>
         <Contacts />
       </div>
+      {/* <div>
+        <Counter/>
+      </div> */}
+      {/* <div>
+        <PostList/>
+      </div> */}
     </motion.div>
   );
 }

@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import PostList from "../Features/Posts/PostList";
 
 function Comments() {
   return (
@@ -24,6 +25,9 @@ function Comments() {
           class="transition-all duration-300 ease-in-out delay-150 path-0"
         ></path>
       </svg>
+
+      <PostList/>
+
       <div className='bg-cust4 text-3xl text-center text-cust1'>UNDER CONSTRUCTION</div>
       <div className='bg-cust4 text-cust1 text-center'>This page supposed to be a comments page with login that i create with mongodb</div>
     </motion.div>
