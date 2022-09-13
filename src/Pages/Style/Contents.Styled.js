@@ -1,28 +1,27 @@
-import styled, { keyframes } from "styled-components";
+import React from "react";
+import styled, {keyframes} from "styled-components";
 
+export default function TextAnimation(){
+  const jobs = ["Front End Developer", "Back End Developer", "Fullstack Developer"]
+
+  return(
+    <Wrapper style={{fontFamily:'Catamaran'}}>{jobs.map((item, index)=> (
+      <span key={index}>{item}</span>
+    ))}</Wrapper>
+  )
+}
 
 const animation = keyframes`
-    0%{ opacity: 0 }
-    100%{ opacity: 1}
+  0% {opacity: 0; transform: translateY(100px) skewY(10deg) skewX(10deg) rotateZ(10deg); filter:blur(25px)}
+  25% {opacity:1; transform: translateY(0) skewY(0) skewX(0) rotateZ(0); filter:blur(0)}
+  75% {opacity:1; transform: translateY(0) skewY(0) skewX(0) rotateZ(0); filter:blur(0)}
+  100% { opacity:0; transform: translateY(100px) skewY(10deg) skewX(10deg) rotateZ(10deg); filter:blur(25px)}
 `
-export const Fade = styled.h1`
-opacity: 0;
-animation-name: ${animation};
-animation-delay: 0.7s;
-animation-duration: 4s;
-animation-fill-mode: forwards;
-animation-iteration-count: initial;
-font-family: Catamaran;
-`
-export const StyleBar = styled.div`
 
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 10px;
-  background: var(--red);
-  transform-origin: 0%;
-
-
+const Wrapper = styled.span`
+  display: inline-block;
+  animation-name: ${animation};
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
 `

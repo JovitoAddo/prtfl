@@ -6,6 +6,12 @@ module.exports = {
       sans: ["ui-sans-serif", "system-ui"],
       serif: ["ui-serif", "Georgia"],
       mono: ["ui-monospace", "SFMono-Regular"],
+      comfortaa: ["Comfortaa", "cursive"],
+      catamaran: ["Catamaran", "sans-serif"],
+      cormorant: ["Cormorant", "serif"],
+      annie: ["Annie Use Your Telescope", "cursive"],
+      MMD: ["Major Mono Display", "monospace"],
+      monoton: ["Monoton", "cursive"]
     },
     colors: {
       transparent: "transparent",

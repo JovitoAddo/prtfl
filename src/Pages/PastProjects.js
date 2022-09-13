@@ -75,8 +75,8 @@ function PastProjects() {
   return (
     <motion.div
       id="projects"
-      initial={{opacity:0}}
-      whileInView={{opacity:1}}
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
       viewport={{ once: false, amount: 0.3 }}
       transition={{ duration: 1 }}
       className="bg-cust4"
@@ -97,7 +97,7 @@ function PastProjects() {
           class="transition-all duration-300 ease-in-out delay-150 path-0"
         ></path>
       </svg> */}
-      
+
       <div className="grid justify-items-center grid-cols-1 gap-4 px-4 py-5 md:grid-cols-2 bg-cust4">
         <div
           id="proj1"
@@ -110,7 +110,7 @@ function PastProjects() {
             alt="something"
             className="rounded opacity-40 hover:opacity-100"
           ></img>
-          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-inherit top-auto">
+          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-inherit top-auto" >
             PitchPls!
           </h1>
         </div>
@@ -164,7 +164,7 @@ function PastProjects() {
         </div>
         {/* MODAL PITCHPLS */}
         <Transition appear show={isOpen} as={Fragment}>
-          <Dialog as="div" className="relative z-10" onClose={closeModal}>
+          <Dialog as="div" className="relative z-10"  onClose={closeModal}>
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -191,22 +191,22 @@ function PastProjects() {
                   <Dialog.Panel className="w-full max-w-md border border-cust3 transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-lg font-medium leading-6 text-cust1"
+                      className="text-lg font-medium leading-6 text-cust2"
                     >
-                      PitchPls! DISCLAIMER
+                      PitchPls! *DISCLAIMER*
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-sm text-cust1">
+                      <p className="text-lg text-cust1" style={{fontFamily: "Catamaran"}}>
                         This fullstack Website have high dependency with the
                         restful API. but at the time it's created, heroku is
                         having a problem with upload and my team can't upload
                         the API. so if you want to see how the website work, you
                         could watch the presentation video.
-                        <p>
+                        <p style={{fontFamily: "Catamaran"}}>
                           It's a crowdfunding website with tiktok like
                           presentation.
                         </p>
-                        <p> Project Duration: 2 Week </p>
+                        <p style={{fontFamily: "Catamaran"}}> Project Duration: 2 Week </p>
                       </p>
                     </div>
 
@@ -227,7 +227,7 @@ function PastProjects() {
                       </button>
                       <button
                         type="button"
-                        className="absolute top-0 right-0 m-3 text-cust1"
+                        className="absolute top-0 right-0 m-3 text-cust1 hover:text-cust3"
                         onClick={closeModal}
                       >
                         ✖
@@ -269,19 +269,19 @@ function PastProjects() {
                   <Dialog.Panel className="w-full border border-cust3 max-w-md transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-lg font-medium leading-6 text-cust1"
+                      className="text-lg font-medium leading-6 text-cust2"
                     >
                       CatLuv
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-sm text-cust1">
+                      <p className="text-lg text-cust1" style={{fontFamily: "Catamaran"}}>
                         A single-page frontend project, that created with React,
                         Bootstrap, external API, and considerable time limit.
-                        <p>
+                        <p style={{fontFamily: "Catamaran"}}>
                           An information website about cats with better
                           presentation than wiki.
                         </p>
-                        <p>Project Duration: 2 Week</p>
+                        <p style={{fontFamily: "Catamaran"}}>Project Duration: 2 Week</p>
                       </p>
                     </div>
 
@@ -302,7 +302,7 @@ function PastProjects() {
                       </button>
                       <button
                         type="button"
-                        className="absolute top-0 right-0 m-3 text-cust1"
+                        className="absolute top-0 right-0 m-3 text-cust1 hover:text-cust3"
                         onClick={closeModalC}
                       >
                         ✖
@@ -344,18 +344,18 @@ function PastProjects() {
                   <Dialog.Panel className="w-full border border-cust3 max-w-md transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-lg font-medium leading-6 text-cust1"
+                      className="text-lg font-medium leading-6 text-cust2"
                     >
                       Haku Library RESTful API
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-sm text-cust1">
+                      <p className="text-lg text-cust1" style={{fontFamily: "Catamaran"}}>
                         A Restful API created using mongoDB, postman, nodeJS.
-                        <p>
+                        <p style={{fontFamily: "Catamaran"}}>
                           A RESTful API for library website for admin to add,
                           remove or edit data from database.
                         </p>
-                        <p>Project Duration: 2 Week</p>
+                        <p style={{fontFamily: "Catamaran"}}>Project Duration: 2 Week</p>
                       </p>
                     </div>
 
@@ -365,11 +365,11 @@ function PastProjects() {
                         className="inline-flex justify-center rounded-md bg-cust1 px-4 py-2 text-sm font-medium text-black hover:bg-cust3 "
                         onClick={newTabR}
                       >
-                        Netlify Link
+                        Heroku Link
                       </button>
                       <button
                         type="button"
-                        className="absolute top-0 right-0 m-3 text-cust1"
+                        className="absolute top-0 right-0 m-3 text-cust1 hover:text-cust3"
                         onClick={closeModalR}
                       >
                         ✖
@@ -411,35 +411,35 @@ function PastProjects() {
                   <Dialog.Panel className="w-full border border-cust3 max-w-md transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-lg font-medium leading-6 text-cust1"
+                      className="text-lg font-medium leading-6 text-cust2"
                     >
                       Buah Tangan
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-sm text-cust1">
+                      <p className="text-lg text-cust1" style={{fontFamily: "Catamaran"}}>
                         A simple HTML and CSS website, it's a first project that
                         my team created since learning frontend in a month. Half
                         of the content in this website dependent on a mockAPI
                         that accidentally got deleted.
-                        <p>
+                        <p style={{fontFamily: "Catamaran"}}>
                           An eCommerce website for buying regional stuff and
                           food.
                         </p>
-                        <p>Project Duration: 5 days</p>
+                        <p style={{fontFamily: "Catamaran"}}>Project Duration: 5 days</p>
                       </p>
                     </div>
 
                     <div className="mt-4">
                       <button
                         type="button"
-                        className="inline-flex justify-center rounded-md bg-cust1 px-4 py-2 text-sm font-medium text-black hover:bg-cust3 "
+                        className="inline-flex justify-center rounded-md bg-cust1 px-4 py-2 text-sm font-medium text-black hover:bg-cust3"
                         onClick={newTabB}
                       >
                         Netlify Link
                       </button>
                       <button
                         type="button"
-                        className="absolute top-0 right-0 m-3 text-cust1"
+                        className="absolute top-0 right-0 m-3 text-cust1 hover:text-cust3"
                         onClick={closeModalB}
                       >
                         ✖

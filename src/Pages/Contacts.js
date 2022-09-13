@@ -40,7 +40,7 @@ function Contacts() {
         <div className="py-4 pr-6">
           <button
             onClick={() => setShowEmail((showEmail) => !showEmail)}
-            className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2"
+            className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2 hover:bg-cust3 hover:text-cust1"
             style={{ fontSize: "5vw", fontFamily:"Catamaran" }}
           >
             Email ▼
@@ -63,7 +63,7 @@ function Contacts() {
         <div className="py-4 pr-6">
           <button
             onClick={() => setShowPhone((showPhone) => !showPhone)}
-            className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2"
+            className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2 hover:bg-cust3 hover:text-cust1"
             style={{  fontSize: "5vw", fontFamily:"Catamaran" }}
           >
             Phone ▼
@@ -108,7 +108,7 @@ function Contacts() {
         <div className="pt-4 pr-6">
           <button
             onClick={() => setIsShowing((isShowing) => !isShowing)}
-            className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2"
+            className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2 hover:bg-cust3 hover:text-cust1"
             style={{ fontSize: "4vw", fontFamily:"Catamaran" }}
           >
             Take my CV ▼

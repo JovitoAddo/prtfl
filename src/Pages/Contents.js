@@ -1,5 +1,4 @@
 import React from "react";
-import weirdo from "../Assets/weirdo.jpg";
 import profile from "../Assets/profile-pic.png";
 import { motion } from "framer-motion";
 // import buah from "../Assets/BuahTangan.png";
@@ -15,7 +14,9 @@ import Tilt from "react-vanilla-tilt";
 import Counter from "../Features/counter/Counter";
 import PostList from "../Features/Posts/PostList";
 
+
 function Contents() {
+  
   return (
     <motion.div
       className="flex flex-col content-center "
@@ -41,7 +42,7 @@ function Contents() {
           <Tilt style={{ background: "white" }}>
             <img
               src={profile}
-              className=" border-8 border-cust4"
+              className=" border-8 border-cust4  hover:border-cust3 cursor-default"
               style={{ height: "250px" }}
               alt="A photograph of my face"
             ></img>
@@ -52,11 +53,9 @@ function Contents() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 3 } }}
-            className="text-cust4 text-4xl"
-            style={{ fontFamily: "Catamaran" }}
+            className="text-cust4 text-4xl font-catamaran"
           >
-            I am Jovito Addo, and I aspire to be a Fullstack Developer /
-            Frontend Developer / Backend Developer
+            I am Jovito Addo, and I aspire to be a Front End Developer, Back End Developer, Fullstack Developer
           </motion.div>
         </div>
         {/* <div className="prose pt-5 text-center mx-auto text-md text-black">
@@ -91,7 +90,7 @@ function Contents() {
         // transition={{duration:3}}
         className="mx-auto min-w-full bg-cust4"
       >
-        <div className="flex justify-center pb-3 text-5xl text-cust2 bg-cust4">
+        <div className="flex justify-center pb-3 text-5xl text-cust2 bg-cust4 cursor-default">
           Past Projects
         </div>
         <PastProjects />
@@ -198,13 +197,13 @@ function Contents() {
         </div> */}
       </div>
       <div className="bg-cust4">
-        <p className="flex justify-center pb-3 text-5xl text-cust2">
+        <p className="flex justify-center pb-3 text-5xl text-cust2 cursor-default">
           Certificate
         </p>
         <Certificate />
       </div>
       <div className="bg-cust4">
-        <p className="flex justify-center pb-3 text-5xl text-cust2 bg-cust4">
+        <p className="flex justify-center pb-3 text-5xl text-cust2 bg-cust4 cursor-default">
           Contact Me
         </p>
         <Contacts />
