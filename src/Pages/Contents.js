@@ -55,7 +55,7 @@ function Contents() {
             animate={{ opacity: 1, transition: { duration: 3 } }}
             className="text-cust4 text-4xl font-catamaran"
           >
-            I am Jovito Addo, and I aspire to be a Front End Developer, Back End Developer, Fullstack Developer
+            I am Jovito Addo, and I aspire to be a Front End Developer / React Developer
           </motion.div>
         </div>
         {/* <div className="prose pt-5 text-center mx-auto text-md text-black">
