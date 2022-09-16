@@ -21,7 +21,7 @@ function Certificate() {
       
       <div
         onClick={HandleClick}
-        className="hover:cursor-pointer flex justify-content-center"
+        className="hover:cursor-pointer mx-auto flex justify-center"
       >
         <img src={certificate} className="h-5/6 hover:opacity-60 rounded" />
       </div>
