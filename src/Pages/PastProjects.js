@@ -164,7 +164,7 @@ function PastProjects() {
         </div>
         {/* MODAL PITCHPLS */}
         <Transition appear show={isOpen} as={Fragment}>
-          <Dialog as="div" className="relative z-10"  onClose={closeModal}>
+          <Dialog as="div" className="relative z-50"  onClose={closeModal}>
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -191,12 +191,12 @@ function PastProjects() {
                   <Dialog.Panel className="w-full max-w-md border border-cust3 transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-lg font-medium leading-6 text-cust2"
+                      className="text-lg font-medium leading-6 text-cust2 cursor-default"
                     >
                       PitchPls! *DISCLAIMER*
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-lg text-cust1" style={{fontFamily: "Catamaran"}}>
+                      <p className="text-lg  text-cust1 " style={{fontFamily: "Catamaran"}}>
                         This fullstack Website have high dependency with the
                         restful API. but at the time it's created, heroku is
                         having a problem with upload and my team can't upload
@@ -242,7 +242,7 @@ function PastProjects() {
 
         {/* MODAL CATLUV */}
         <Transition appear show={isOpenC} as={Fragment}>
-          <Dialog as="div" className="relative z-10" onClose={closeModalC}>
+          <Dialog as="div" className="relative z-50" onClose={closeModalC}>
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -269,7 +269,7 @@ function PastProjects() {
                   <Dialog.Panel className="w-full border border-cust3 max-w-md transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-lg font-medium leading-6 text-cust2"
+                      className="text-lg font-medium leading-6 text-cust2 cursor-default"
                     >
                       CatLuv
                     </Dialog.Title>
@@ -317,7 +317,7 @@ function PastProjects() {
 
         {/* MODAL Restful API */}
         <Transition appear show={isOpenR} as={Fragment}>
-          <Dialog as="div" className="relative z-10" onClose={closeModalR}>
+          <Dialog as="div" className="relative z-50" onClose={closeModalR}>
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -344,7 +344,7 @@ function PastProjects() {
                   <Dialog.Panel className="w-full border border-cust3 max-w-md transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-lg font-medium leading-6 text-cust2"
+                      className="text-lg font-medium leading-6 text-cust2 cursor-default"
                     >
                       Haku Library RESTful API
                     </Dialog.Title>
@@ -384,7 +384,7 @@ function PastProjects() {
 
         {/* MODAL BUAH TANGAN */}
         <Transition appear show={isOpenB} as={Fragment}>
-          <Dialog as="div" className="relative z-10" onClose={closeModalB}>
+          <Dialog as="div" className="relative z-50" onClose={closeModalB}>
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -411,7 +411,7 @@ function PastProjects() {
                   <Dialog.Panel className="w-full border border-cust3 max-w-md transform overflow-hidden rounded-2xl bg-cust4 p-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title
                       as="h3"
-                      className="text-lg font-medium leading-6 text-cust2"
+                      className="text-lg font-medium leading-6 text-cust2 cursor-default"
                     >
                       Buah Tangan
                     </Dialog.Title>
