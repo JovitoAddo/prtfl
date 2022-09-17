@@ -110,7 +110,7 @@ function PastProjects() {
             alt="something"
             className="rounded opacity-40 hover:opacity-100"
           ></img>
-          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-inherit top-auto" >
+          <h1 className="absolute pl-3 pt-3 text-5xl cursor-default text-inherit top-auto">
             PitchPls!
           </h1>
         </div>
@@ -164,7 +164,7 @@ function PastProjects() {
         </div>
         {/* MODAL PITCHPLS */}
         <Transition appear show={isOpen} as={Fragment}>
-          <Dialog as="div" className="relative z-50"  onClose={closeModal}>
+          <Dialog as="div" className="relative z-50" onClose={closeModal}>
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -196,17 +196,23 @@ function PastProjects() {
                       PitchPls! *DISCLAIMER*
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-lg  text-cust1 " style={{fontFamily: "Catamaran"}}>
+                      <p
+                        className="text-lg  text-cust1 "
+                        style={{ fontFamily: "Catamaran" }}
+                      >
                         This fullstack Website have high dependency with the
                         restful API. but at the time it's created, heroku is
                         having a problem with upload and my team can't upload
                         the API. so if you want to see how the website work, you
                         could watch the presentation video.
-                        <p style={{fontFamily: "Catamaran"}}>
+                        <p style={{ fontFamily: "Catamaran" }}>
                           It's a crowdfunding website with tiktok like
                           presentation.
                         </p>
-                        <p style={{fontFamily: "Catamaran"}}> Project Duration: 2 Week </p>
+                        <p style={{ fontFamily: "Catamaran" }}>
+                          {" "}
+                          Project Duration: 2 Week{" "}
+                        </p>
                       </p>
                     </div>
 
@@ -230,7 +236,22 @@ function PastProjects() {
                         className="absolute top-0 right-0 m-3 text-cust1 hover:text-cust3"
                         onClick={closeModal}
                       >
-                        ✖
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-circle-x fill-cust4 hover:fill-cust3 hover:animate-bounce"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#ffffff"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <circle cx="12" cy="12" r="9" />
+                          <path d="M10 10l4 4m0 -4l-4 4" />
+                        </svg>
                       </button>
                     </div>
                   </Dialog.Panel>
@@ -274,14 +295,19 @@ function PastProjects() {
                       CatLuv
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-lg text-cust1" style={{fontFamily: "Catamaran"}}>
+                      <p
+                        className="text-lg text-cust1"
+                        style={{ fontFamily: "Catamaran" }}
+                      >
                         A single-page frontend project, that created with React,
                         Bootstrap, external API, and considerable time limit.
-                        <p style={{fontFamily: "Catamaran"}}>
+                        <p style={{ fontFamily: "Catamaran" }}>
                           An information website about cats with better
                           presentation than wiki.
                         </p>
-                        <p style={{fontFamily: "Catamaran"}}>Project Duration: 2 Week</p>
+                        <p style={{ fontFamily: "Catamaran" }}>
+                          Project Duration: 2 Week
+                        </p>
                       </p>
                     </div>
 
@@ -305,7 +331,22 @@ function PastProjects() {
                         className="absolute top-0 right-0 m-3 text-cust1 hover:text-cust3"
                         onClick={closeModalC}
                       >
-                        ✖
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-circle-x fill-cust4 hover:fill-cust3 hover:animate-bounce"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#ffffff"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <circle cx="12" cy="12" r="9" />
+                          <path d="M10 10l4 4m0 -4l-4 4" />
+                        </svg>
                       </button>
                     </div>
                   </Dialog.Panel>
@@ -349,13 +390,18 @@ function PastProjects() {
                       Haku Library RESTful API
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-lg text-cust1" style={{fontFamily: "Catamaran"}}>
+                      <p
+                        className="text-lg text-cust1"
+                        style={{ fontFamily: "Catamaran" }}
+                      >
                         A Restful API created using mongoDB, postman, nodeJS.
-                        <p style={{fontFamily: "Catamaran"}}>
+                        <p style={{ fontFamily: "Catamaran" }}>
                           A RESTful API for library website for admin to add,
                           remove or edit data from database.
                         </p>
-                        <p style={{fontFamily: "Catamaran"}}>Project Duration: 2 Week</p>
+                        <p style={{ fontFamily: "Catamaran" }}>
+                          Project Duration: 2 Week
+                        </p>
                       </p>
                     </div>
 
@@ -372,7 +418,22 @@ function PastProjects() {
                         className="absolute top-0 right-0 m-3 text-cust1 hover:text-cust3"
                         onClick={closeModalR}
                       >
-                        ✖
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-circle-x fill-cust4 hover:fill-cust3 hover:animate-bounce"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#ffffff"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <circle cx="12" cy="12" r="9" />
+                          <path d="M10 10l4 4m0 -4l-4 4" />
+                        </svg>
                       </button>
                     </div>
                   </Dialog.Panel>
@@ -416,16 +477,21 @@ function PastProjects() {
                       Buah Tangan
                     </Dialog.Title>
                     <div className="mt-2 prose">
-                      <p className="text-lg text-cust1" style={{fontFamily: "Catamaran"}}>
+                      <p
+                        className="text-lg text-cust1"
+                        style={{ fontFamily: "Catamaran" }}
+                      >
                         A simple HTML and CSS website, it's a first project that
                         my team created since learning frontend in a month. Half
                         of the content in this website dependent on a mockAPI
                         that accidentally got deleted.
-                        <p style={{fontFamily: "Catamaran"}}>
+                        <p style={{ fontFamily: "Catamaran" }}>
                           An eCommerce website for buying regional stuff and
                           food.
                         </p>
-                        <p style={{fontFamily: "Catamaran"}}>Project Duration: 5 days</p>
+                        <p style={{ fontFamily: "Catamaran" }}>
+                          Project Duration: 5 days
+                        </p>
                       </p>
                     </div>
 
@@ -442,7 +508,22 @@ function PastProjects() {
                         className="absolute top-0 right-0 m-3 text-cust1 hover:text-cust3"
                         onClick={closeModalB}
                       >
-                        ✖
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="icon icon-tabler icon-tabler-circle-x fill-cust4 hover:fill-cust3 hover:animate-bounce"
+                          width="35"
+                          height="35"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="#ffffff"
+                          fill="none"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        >
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                          <circle cx="12" cy="12" r="9" />
+                          <path d="M10 10l4 4m0 -4l-4 4" />
+                        </svg>
                       </button>
                     </div>
                   </Dialog.Panel>

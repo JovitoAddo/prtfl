@@ -9,14 +9,13 @@ import { motion } from "framer-motion";
 import PastProjects from "./PastProjects";
 import Contacts from "./Contacts";
 import Certificate from "./Certificate";
+import { HashLink as Link } from "react-router-hash-link";
 import Projects from "./Projects";
 import Tilt from "react-vanilla-tilt";
 import Counter from "../Features/counter/Counter";
 import PostList from "../Features/Posts/PostList";
 
-
 function Contents() {
-  
   return (
     <motion.div
       className="flex flex-col content-center "
@@ -40,12 +39,12 @@ function Contents() {
           className="flex justify-center pt-3  "
         >
           {/* <Tilt style={{ background: "white" }}> */}
-            <img
-              src={profile}
-              className=" border-8 border-cust4  hover:border-cust3 cursor-default"
-              style={{ height: "250px" }}
-              alt="A photograph of my face"
-            ></img>
+          <img
+            src={profile}
+            className=" border-8 border-cust4  hover:border-cust3 active:animate-spin cursor-default"
+            style={{ height: "250px" }}
+            alt="A photograph of my face"
+          ></img>
           {/* </Tilt> */}
         </motion.div>
 
@@ -55,7 +54,8 @@ function Contents() {
             animate={{ opacity: 1, transition: { duration: 3 } }}
             className="text-cust4 text-4xl font-catamaran"
           >
-            I am Jovito Addo, and I aspire to be a Front End Developer / React Developer
+            I am Jovito Addo, and I aspire to be a Front End Developer / React
+            Developer
           </motion.div>
         </div>
         {/* <div className="prose pt-5 text-center mx-auto text-md text-black">
@@ -214,6 +214,28 @@ function Contents() {
       {/* <div>
         <PostList/>
       </div> */}
+      <div className="fixed bottom-10 right-10">
+        <Link to="#top">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-arrow-up-circle hover:animate-pulse"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#000000"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <circle cx="12" cy="12" r="9" />
+            <line x1="12" y1="8" x2="8" y2="12" />
+            <line x1="12" y1="8" x2="12" y2="16" />
+            <line x1="16" y1="12" x2="12" y2="8" />
+          </svg>
+        </Link>
+      </div>
     </motion.div>
   );
 }

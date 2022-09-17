@@ -1,22 +1,17 @@
-import { Fragment } from "react";
-import { Disclosure, Menu, Transition } from "@headlessui/react";
-import { BellIcon, MenuIcon, XIcon } from "@heroicons/react/outline";
+import { Disclosure} from "@headlessui/react";
+import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { HashLink as Link } from "react-router-hash-link";
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default function Example() {
   return (
-    <Disclosure as="nav" className="sticky top-0 w-full z-40 bg-cust2">
+    <Disclosure as="nav" className="sticky top-0 w-full z-40 bg-transparent">
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
             <div className="relative flex items-center justify-between h-16 ">
               <div className="relative inset-y-0 left-0 flex items-center sm:hidden">
                 {/* BURGER MENU LOGO */}
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-cust4 hover:text-cust4 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cust4">
+                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-black hover:text-cust2 hover:bg-slate-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cust4">
                   <span className="sr-only">Open main menu</span>
                   {open ? (
                     <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -28,7 +23,7 @@ export default function Example() {
               {/* NAVBAR MENU FULLSCREEN */}
               <div className="flex-1 flex grow items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4 text-cust4">
+                  <div className="flex space-x-4 text-black">
                     <Link to="#top">
                       <div className=" px-2 py-2 hover:px-2,py-2 hover:text-cust3 hover:rounded">
                         Home
@@ -62,10 +57,10 @@ export default function Example() {
                 <Link
                   to="#contacts"
                   smooth
-                  className="text-cust4 px-3"
+                  className="text-black px-3"
                   style={{}}
                 >
-                  <div className="px-2 py-2 hover:px-2,py-2 hover:text-cust3  hover:rounded ">
+                  <div className="px-2 py-2 hover:px-2,py-2 border-4 rounded-md border-cust3 hover:text-cust3  ">
                     Contact Me
                   </div>
                 </Link>
@@ -74,15 +69,15 @@ export default function Example() {
           </div>
           {/* BURGER MENU  */}
           <Disclosure.Panel className="relative sm:hidden">
-            <div className="fixed px-2 pt-2 pb-3 space-y-1 w-2/5 text-cust4 focus: bg-cust2 focus: rounded">
+            <div className="fixed px-2 pt-2 pb-3 space-y-1 w-2/5 text-black border-2 border-cust3 focus: bg-cust2 focus: rounded">
               <Link to="#top">
-                <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 hover:px-3,py-2 rounded-md text-sm font-medium">
+                <div className="px-3 py-2 hover:bg-slate-700 hover:text-cust3 hover:px-3,py-2 rounded-md text-sm font-medium">
                   Home
                 </div>
               </Link>
 
               <Link to="#projects" smooth>
-                <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 hover:px-3,py-2 rounded-md text-sm font-medium ">
+                <div className="px-3 py-2 hover:bg-slate-700 hover:text-cust3 hover:px-3,py-2 rounded-md text-sm font-medium ">
                   Past Projects
                 </div>
               </Link>
@@ -100,16 +95,16 @@ export default function Example() {
               </Link> */}
 
               <Link to="#certificate" smooth>
-                <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 hover:px-3,py-2 rounded-md text-sm font-medium ">
+                <div className="px-3 py-2 hover:bg-slate-700 hover:text-cust3 hover:px-3,py-2 rounded-md text-sm font-medium ">
                   Certificate
                 </div>
               </Link>
 
-              <Link to="#contacts" smooth>
-                <div className="text-cust4 px-3 py-2 hover:bg-slate-700 hover:text-cust4 hover:px-3,py-2 rounded-md text-sm font-medium ">
+              {/* <Link to="#contacts" smooth>
+                <div className="px-3 py-2 hover:bg-slate-700 hover:text-cust3 hover:px-3,py-2 rounded-md text-sm font-medium ">
                   Contact Me
                 </div>
-              </Link>
+              </Link> */}
             </div>
           </Disclosure.Panel>
         </>
