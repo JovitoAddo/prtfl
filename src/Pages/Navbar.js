@@ -25,17 +25,17 @@ export default function Example() {
                 <div className="hidden sm:block sm:ml-6">
                   <div className="flex space-x-4 text-black">
                     <Link to="#top">
-                      <div className=" px-2 py-2 hover:px-2,py-2 hover:text-cust3 hover:rounded">
+                      <div className=" px-2 py-2 hover:px-2,py-2 hover:text-cust3 hover:rounded hover:shadow-xl">
                         Home
                       </div>
                     </Link>
                     <Link to="#projects" smooth>
-                      <div className="px-2 py-2 hover:px-2,py-2 hover:text-cust3 hover:rounded">
+                      <div className="px-2 py-2 hover:px-2,py-2 hover:text-cust3 hover:rounded hover:shadow-xl">
                         Past Projects
                       </div>
                     </Link>
                     <Link to="#certificate" smooth>
-                      <div className="px-2 py-2 hover:px-2,py-2 hover:text-cust3 hover:rounded">
+                      <div className="px-2 py-2 hover:px-2,py-2 hover:text-cust3 hover:rounded hover:shadow-xl">
                         Certificate
                       </div>
                     </Link>
@@ -60,7 +60,7 @@ export default function Example() {
                   className="text-black px-3"
                   style={{}}
                 >
-                  <div className="px-2 py-2 hover:px-2,py-2 border-4 rounded-md border-cust3 hover:text-cust3  ">
+                  <div className="px-2 py-2 hover:px-2,py-2 rounded-md border-cust3 hover:text-cust3 border-2 shadow-md hover:shadow-xl">
                     Contact Me
                   </div>
                 </Link>
