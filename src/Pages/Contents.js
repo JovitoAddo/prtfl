@@ -39,14 +39,14 @@ function Contents() {
           }}
           className="flex justify-center pt-3  "
         >
-          <Tilt style={{ background: "white" }}>
+          {/* <Tilt style={{ background: "white" }}> */}
             <img
               src={profile}
               className=" border-8 border-cust4  hover:border-cust3 cursor-default"
               style={{ height: "250px" }}
               alt="A photograph of my face"
             ></img>
-          </Tilt>
+          {/* </Tilt> */}
         </motion.div>
 
         <div className="prose container mx-auto text-cust4 grid pt-4 text-center ">
