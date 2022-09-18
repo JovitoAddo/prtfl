@@ -218,7 +218,7 @@ function Contents() {
         <Link to="#top">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-arrow-up-circle hover:animate-pulse"
+            class="icon icon-tabler icon-tabler-arrow-up-circle opacity-50 hover:animate-pulse"
             width="44"
             height="44"
             viewBox="0 0 24 24"
