@@ -52,10 +52,9 @@ function Contents() {
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 3 } }}
-            className="text-cust4 text-4xl font-catamaran"
+            className="text-cust4 text-3xl font-catamaran"
           >
-            I am Jovito Addo, and I aspire to be a Front End Developer / React
-            Developer
+            I am Jovito Addo, and I aspire to be a Front End Developer / Fullstack Developer
           </motion.div>
         </div>
         {/* <div className="prose pt-5 text-center mx-auto text-md text-black">
