@@ -21,6 +21,7 @@ module.exports = {
       cust2: "#F9D5A7",
       cust3: "#FFB085",
       cust4: "#90AACB",
+      cust5: "#6b91c2",
     },
   },
   plugins: [

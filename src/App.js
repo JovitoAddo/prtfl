@@ -5,6 +5,7 @@ import Footer from "./Pages/Footer";
 import Contents from "./Pages/Contents";
 import About from "./Pages/About";
 import PastProjects from "./Pages/PastProjects";
+import Projects from "./Pages/Projects";
 import Comments from "./Pages/Comments";
 import Error from "./Pages/Error";
 import Contacts from "./Pages/Contacts";

@@ -89,12 +89,12 @@ function Contents() {
         // transition={{duration:3}}
         className="mx-auto min-w-full bg-cust4"
       >
-        <div className="flex justify-center pb-3 text-5xl text-cust2 bg-cust4 cursor-default">
+        <div className="flex justify-center pb-3 text-5xl text-cust2 bg-gradient-to-b from-cust4 to-cust4 cursor-default">
           Past Projects
         </div>
+        {/* <Projects/> */}
         <PastProjects />
 
-        {/* <Projects/> */}
         {/* IMAGE CAROUSEL */}
         {/* <div
           id="carouselDarkVariant"

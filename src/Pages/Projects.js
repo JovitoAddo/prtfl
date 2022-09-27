@@ -7,28 +7,121 @@ import { StyledProject } from "./Style/Projects.styled";
 
 function Projects() {
   return (
-    <>
-      <div className="grid grid-cols-4 gap-1 sm:grid-rows-4 bg-cust4 p-4 h-screen">
-        <img
-          className="col-span-3 border-4 w-full border-cust2 rounded-3"
-          src={buah}
-        />
-        
-        <div className=" prose ps-5 sm:grid-rows-4">
-          <h1 className="text-cust1">BuahTangan</h1>
-          <h2
-            className="text-cust2 text-xl"
-            style={{ fontFamily: "Catamaran" }}
-          >
-            A simple HTML and CSS website, it's a first project that my team
-            created since learning frontend in a month. Half of the content in
-            this website dependent on a mockAPI that accidentally get deleted.
-          </h2>
-          <button className=" p-2 text-cust1 border rounded-full">Youtube Link</button>
-          <button className=" p-2 ms-2 text-cust1 border rounded-full">Netlify Link</button>
+    <div className="p-2 bg-cust5">
+      {/* projectdiv */}
+      <div as="outdiv" className="flex flex-wrap min-w-full min-h-full pb-10">
+        <div className="w-2/5 relative rounded bg-gradient-to-b from-neutral-focus to-transparent">
+          <img src={buah} className="rounded opacity-40 hover:opacity-100" />
+        </div>
+        <div className="grid w-3/5 pl-7 justify-center">
+          <h1 className="prose text-center text-cust2 text-5xl pb-1 cursor-default">
+            BuahTangan
+          </h1>
+          <p className="prose text-cust2 text-justify cursor-default">
+            Do consectetur non duis velit sunt excepteur magna in culpa
+            incididunt nostrud Lorem velit. Laboris duis nulla labore ad quis
+            cillum mollit ex quis eiusmod et proident sint. In eiusmod elit
+            laboris fugiat nostrud. Veniam nisi tempor occaecat ea duis aliqua
+            adipisicing ullamco ipsum qui in eiusmod excepteur quis.Nostrud
+            exercitation reprehenderit ullamco labore nisi dolore. Magna fugiat
+            commodo aute sit consectetur Lorem ea. Nisi incididunt esse mollit
+          </p>
+          <div className="flex justify-around">
+            <button className="hover:text-cust2 border-2 border-solid rounded p-2">
+              something
+            </button>
+            <button className="hover:text-cust2 border-2 border-solid rounded p-2">
+              something
+            </button>
+          </div>
         </div>
       </div>
-    </>
+      {/* different project */}
+      <div className="flex  min-w-full divide-cust4 pb-10">
+        <div className="w-2/5 relative rounded bg-gradient-to-b from-neutral-focus to-transparent ">
+          <img src={buah} className="rounded opacity-40 hover:opacity-100" />
+        </div>
+        <div className="grid w-3/5 pl-7 justify-center">
+          <h1 className="prose text-center text-cust2 text-5xl pb-1 cursor-default">
+            BuahTangan
+          </h1>
+          <p className="prose text-cust2 text-justify cursor-default">
+            Do consectetur non duis velit sunt excepteur magna in culpa
+            incididunt nostrud Lorem velit. Laboris duis nulla labore ad quis
+            cillum mollit ex quis eiusmod et proident sint. In eiusmod elit
+            laboris fugiat nostrud. Veniam nisi tempor occaecat ea duis aliqua
+            adipisicing ullamco ipsum qui in eiusmod excepteur quis.Nostrud
+            exercitation reprehenderit ullamco labore nisi dolore. Magna fugiat
+            commodo aute sit consectetur Lorem ea. Nisi incididunt esse mollit
+          </p>
+          <div className="flex justify-around">
+            <button className="hover:text-cust2 border-2 border-solid rounded p-2">
+              something
+            </button>
+            <button className="hover:text-cust2 border-2 border-solid rounded p-2">
+              something
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* different project */}
+      <div className="flex  min-w-full divide-cust4 pb-10">
+        <div className="w-2/5 relative rounded bg-gradient-to-b from-neutral-focus to-transparent ">
+          <img src={buah} className="rounded opacity-40 hover:opacity-100" />
+        </div>
+        <div className="grid w-3/5 pl-7 justify-center">
+          <h1 className="prose text-center text-cust2 text-5xl pb-1 cursor-default">
+            BuahTangan
+          </h1>
+          <p className="prose text-cust2 text-justify cursor-default">
+            Do consectetur non duis velit sunt excepteur magna in culpa
+            incididunt nostrud Lorem velit. Laboris duis nulla labore ad quis
+            cillum mollit ex quis eiusmod et proident sint. In eiusmod elit
+            laboris fugiat nostrud. Veniam nisi tempor occaecat ea duis aliqua
+            adipisicing ullamco ipsum qui in eiusmod excepteur quis.Nostrud
+            exercitation reprehenderit ullamco labore nisi dolore. Magna fugiat
+            commodo aute sit consectetur Lorem ea. Nisi incididunt esse mollit
+          </p>
+          <div className="flex justify-around">
+            <button className="hover:text-cust2 border-2 border-solid rounded p-2">
+              something
+            </button>
+            <button className="hover:text-cust2 border-2 border-solid rounded p-2">
+              something
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* different project */}
+      <div className="flex  min-w-full divide-cust4 pb-10">
+        <div className="w-2/5 relative rounded bg-gradient-to-b from-neutral-focus to-transparent ">
+          <img src={buah} className="rounded opacity-40 hover:opacity-100" />
+        </div>
+        <div className="grid w-3/5 pl-7 justify-center">
+          <h1 className="prose text-center text-cust2 text-5xl pb-1 cursor-default">
+            BuahTangan
+          </h1>
+          <p className="prose text-cust2 text-justify cursor-default">
+            Do consectetur non duis velit sunt excepteur magna in culpa
+            incididunt nostrud Lorem velit. Laboris duis nulla labore ad quis
+            cillum mollit ex quis eiusmod et proident sint. In eiusmod elit
+            laboris fugiat nostrud. Veniam nisi tempor occaecat ea duis aliqua
+            adipisicing ullamco ipsum qui in eiusmod excepteur quis.Nostrud
+            exercitation reprehenderit ullamco labore nisi dolore. Magna fugiat
+            commodo aute sit consectetur Lorem ea. Nisi incididunt esse mollit
+          </p>
+          <div className="flex justify-around">
+            <button className="hover:text-cust2 border-2 border-solid rounded p-2">
+              something
+            </button>
+            <button className="hover:text-cust2 border-2 border-solid rounded p-2">
+              something
+            </button>
+          </div>
+        </div>
+      </div>
+      {/* end project div */}
+    </div>
   );
 }
 
