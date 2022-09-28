@@ -179,7 +179,7 @@ function Projects() {
             src={buah}
             className="rounded opacity-100 group-hover:opacity-40"
           />
-          <h1 className="absolute pt-5 text-cust3 invisible group-hover:visible text-3xl cursor-default md:text-6xl">
+          <h1 className="absolute pt-5 text-cust3 invisible group-hover:visible text-4xl cursor-default md:text-6xl">
             BuahTangan
           </h1>
         </div>
