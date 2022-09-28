@@ -3,8 +3,24 @@ import { MenuIcon, XIcon } from "@heroicons/react/outline";
 import { HashLink as Link } from "react-router-hash-link";
 
 export default function Example() {
+  let prevScrollpos = window.pageYOffset;
+  window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-80px";
+    }
+    prevScrollpos = currentScrollPos;
+  };
+
   return (
-    <Disclosure as="nav" className="sticky top-0 w-full z-40 bg-transparent">
+    <Disclosure
+      as="nav"
+      id="navbar"
+      className="sticky top-0 w-full z-40 bg-cust2"
+      style={{ transition: "top 0.3s" }}
+    >
       {({ open }) => (
         <>
           <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 ">
@@ -14,7 +30,7 @@ export default function Example() {
                 <div className="dropdown sm:hidden">
                   <Disclosure.Button
                     tabIndex={0}
-                    className="btn bg-transparent border-base-100 border-0 inline-flex items-center justify-center p-2 rounded-md text-neutral-focus hover:text-cust2 hover:bg-neutral-content focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cust4"
+                    className="btn bg-transparent border-base-100 border-0 inline-flex items-center justify-center p-2 rounded-md text-cust5 hover:text-cust2 hover:bg-neutral-content focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cust4"
                   >
                     {open ? (
                       <XIcon className="block h-6 w-6" aria-hidden="true" />
@@ -24,7 +40,7 @@ export default function Example() {
                   </Disclosure.Button>
                   <Disclosure.Panel
                     tabIndex={0}
-                    className="dropdown-content menu p-2 relative sm:hidden shadow rounded-box w-52 bg-cust2"
+                    className="dropdown-content menu p-2 relative sm:hidden shadow rounded-box  text-cust5 w-52 bg-cust2"
                   >
                     <Link to="#top">
                       <div className="px-3 py-2 hover:text-cust3 hover:px-3,py-2 rounded-md text-sm font-medium">
@@ -56,7 +72,7 @@ export default function Example() {
               {/* NAVBAR MENU FULLSCREEN */}
               <div className="flex-1 flex grow items-center justify-center sm:items-stretch sm:justify-start">
                 <div className="hidden sm:block sm:ml-6">
-                  <div className="flex space-x-4 text-neutral-focus">
+                  <div className="flex space-x-4 text-cust5">
                     <Link to="#top">
                       <div className=" px-2 py-2 hover:px-2,py-2 hover:text-cust3 hover:rounded hover:shadow-xl">
                         Home
@@ -93,7 +109,7 @@ export default function Example() {
                   className="text-neutral-focus px-3 opacity-90"
                   style={{}}
                 >
-                  <div className="px-2 py-2 hover:px-2,py-2 rounded-md border-cust4 hover:text-cust3 border-2 shadow-md hover:shadow-xl">
+                  <div className="px-2 py-2 text-cust5 hover:px-2,py-2 rounded-md border-cust4 hover:text-cust3 border-2 shadow-md hover:shadow-xl">
                     Contact Me
                   </div>
                 </Link>

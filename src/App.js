@@ -4,7 +4,6 @@ import Navbar from "./Pages/Navbar";
 import Footer from "./Pages/Footer";
 import Contents from "./Pages/Contents";
 import About from "./Pages/About";
-import PastProjects from "./Pages/PastProjects";
 import Projects from "./Pages/Projects";
 import Comments from "./Pages/Comments";
 import Error from "./Pages/Error";
@@ -20,7 +19,7 @@ function App() {
         <Routes location={location} key={location.pathname}>
           <Route path="/" element={<Index />}>
             <Route index element={<Contents />} />
-            <Route path="projects" element={<PastProjects />} />
+            <Route path="projects" element={<Projects />} />
             <Route path="about" element={<About />} />
             <Route path="comments" element={<Comments />} />
             <Route path="contacts" element={<Contacts />} />

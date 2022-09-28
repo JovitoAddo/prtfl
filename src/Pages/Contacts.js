@@ -13,8 +13,7 @@ function Contacts() {
     whileInView={{x:"0vw"}}
     viewport={{once:false, amount: 0.1}}
     transition={{duration:1}}
-    id='contacts'
-    className='pt-5 bg-cust4'
+    className='pt-5 bg-cust5'
     // initial={{width:0}}
     // animate={{width:"100%"}}
     // exit={{x:window.innerWidth,transition:{duration: 0.1}}}
@@ -36,7 +35,7 @@ function Contacts() {
         ></path>
       </svg> */}
       
-      <div className=" pt-3 grid grid-rows-4 text-cust4 bg-cust4">
+      <div className=" pt-3 grid grid-rows-4 text-cust4 bg-cust5">
         <div className="py-4 pr-6">
           <button
             onClick={() => setShowEmail((showEmail) => !showEmail)}
