@@ -1,133 +1,179 @@
 import { React, useState } from "react";
-import { Transition } from "@headlessui/react";
-import {motion} from "framer-motion"
+import { motion } from "framer-motion";
+import jacv from "../Assets/JovitoAddoCV.pdf";
 
 function Contacts() {
-  const [showEmail, setShowEmail] = useState(false);
-  const [isShowing, setIsShowing] = useState(false);
-  const [showPhone, setShowPhone] = useState(false);
+  const [email, setEmail] = useState(false);
+  const [phone, setPhone] = useState(false);
+  const [cv, setCV] = useState(false);
+  const [linkedin, setLinkedin] = useState(false);
+  const [github, setGithub] = useState(false);
 
   return (
-    <motion.div
-    initial={{x:"-50vw"}}
-    whileInView={{x:"0vw"}}
-    viewport={{once:false, amount: 0.1}}
-    transition={{duration:1}}
-    className='pt-5 bg-cust5'
-    // initial={{width:0}}
-    // animate={{width:"100%"}}
-    // exit={{x:window.innerWidth,transition:{duration: 0.1}}}
-     >
-      {/* <svg
-        width="100%"
-        height="100%"
-        id="svg"
-        viewBox="0 0 1440 400"
-        xmlns="http://www.w3.org/2000/svg"
-        class="transition duration-300 ease-in-out delay-150"
+    <div className="pt-16 ">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false}}
+        transition={{ duration: 1 }}
+        className="grid justify-around lg:flex"
       >
-        <path
-          d="M 0,400 C 0,400 0,200 0,200 C 37.58297489547898,176.37318383125057 75.16594979095797,152.74636766250117 116,135 C 156.83405020904203,117.25363233749883 200.91917573164704,105.38771318124589 246,127 C 291.08082426835296,148.61228681875411 337.15734728245377,203.70277961251523 382,215 C 426.84265271754623,226.29722038748477 470.45143513853793,193.80116836869308 521,204 C 571.5485648614621,214.19883163130692 629.0369121633945,267.09254691271235 670,255 C 710.9630878366055,242.90745308728765 735.400916207884,165.8286439804575 777,152 C 818.599083792116,138.1713560195425 877.3594230050696,187.59287716545757 919,209 C 960.6405769949304,230.40712283454243 985.1613917718371,223.79984735771237 1025,223 C 1064.838608228163,222.20015264228763 1119.9950099075825,227.20773340369283 1174,216 C 1228.0049900924175,204.79226659630717 1280.8585685978335,177.36921902751635 1325,172 C 1369.1414314021665,166.63078097248365 1404.5707157010834,183.31539048624182 1440,200 C 1440,200 1440,400 1440,400 Z"
-          stroke="none"
-          stroke-width="0"
-          fill="#90aacbff"
-          class="transition-all duration-300 ease-in-out delay-150 path-0"
-        ></path>
-      </svg> */}
-      
-      <div className=" pt-3 grid grid-rows-4 text-cust4 bg-cust5">
-        <div className="py-4 pr-6">
-          <button
-            onClick={() => setShowEmail((showEmail) => !showEmail)}
-            className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2 hover:bg-cust3 hover:text-cust1"
-            style={{ fontSize: "5vw", fontFamily:"Catamaran" }}
+        <div className="group m-2 pt-4  ">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-mail stroke-cust3 group-hover:stroke-cust1 transition active:translate-y-4"
+            width="175"
+            height="175"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#00abfb"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            onClick={() => {
+              setEmail(!email);
+            }}
           >
-            Email ▼
-          </button>
-          <Transition
-            show={showEmail}
-            enter="transform transition ease-in-out duration-500 sm:duration-700"
-            enterFrom="-translate-x-full"
-            enterTo="translate-x-0"
-            leave="transform transition ease-in-out duration-500 sm:duration-700"
-            leaveFrom="translate-x-0"
-            leaveTo="-translate-x-full"
-            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2 cursor-default"
-            style={{ fontSize: "4vw", fontFamily:"Catamaran" }}
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="3" y="5" width="18" height="14" rx="2" />
+            <polyline points="3 7 12 13 21 7" />
+          </svg>
+          <p className="text-center text-cust2 cursor-default">Email</p>
+          <motion.p
+            animate={{ opacity: email ? 1 : 0 }}
+            className="text-center text-xl text-cust2 hover:text-cust3"
           >
-            jovitoaddo@gmail.com
-          </Transition>
+            jovitoaddo@gmail
+          </motion.p>
         </div>
-        
-        <div className="py-4 pr-6">
-          <button
-            onClick={() => setShowPhone((showPhone) => !showPhone)}
-            className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2 hover:bg-cust3 hover:text-cust1"
-            style={{  fontSize: "5vw", fontFamily:"Catamaran" }}
+        <div className="group m-2 pt-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-phone-call stroke-cust3 group-hover:stroke-cust1 transition active:translate-y-4"
+            width="175"
+            height="175"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#00abfb"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            onClick={() => {
+              setPhone(!phone);
+            }}
           >
-            Phone ▼
-          </button>
-          <Transition
-            show={showPhone}
-            enter="transform transition ease-in-out duration-500 sm:duration-700"
-            enterFrom="-translate-x-full"
-            enterTo="translate-x-0"
-            leave="transform transition ease-in-out duration-500 sm:duration-700"
-            leaveFrom="translate-x-0"
-            leaveTo="-translate-x-full"
-            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2 cursor-default"
-            style={{ fontSize: "4vw", fontFamily:"" }}
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
+            <path d="M15 7a2 2 0 0 1 2 2" />
+            <path d="M15 3a6 6 0 0 1 6 6" />
+          </svg>
+          <p className="text-center text-cust2 cursor-default">Phone</p>
+          <motion.p
+            animate={{ opacity: phone ? 1 : 0 }}
+            className="text-center text-xl text-cust2 hover:text-cust3"
           >
-            (+62)81806016497
-          </Transition>
+            +6281806016497
+          </motion.p>
         </div>
-
-        {/* <div className="grid justify-items-end py-4">
-          <button
-            onClick={() => setShowPhone((showPhone) => !showPhone)}
-            className="w-1/6 py-2 pr-5 rounded-l-lg flex justify-end "
-            style={{ backgroundColor: "#111827", fontSize: "2vw" }}
+        <div className="group m-2 pt-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-file-certificate stroke-cust3 group-hover:stroke-cust1 transition active:translate-y-4"
+            width="175"
+            height="175"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#00abfb"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            onClick={() => {
+              setCV(!cv);
+            }}
           >
-           ▼ Phone
-          </button>
-          <Transition
-            show={showPhone}
-            enter="transform transition ease-in-out duration-500 sm:duration-700"
-            enterFrom="translate-x-full"
-            enterTo="translate-x-0"
-            leave="transform transition ease-in-out duration-500 sm:duration-700"
-            leaveFrom="translate-x-0"
-            leaveTo="translate-x-full"
-            className="w-2/5 mt-2 py-2 pr-5 rounded-l-lg flex justify-end"
-            style={{ backgroundColor: "#111827", fontSize: "3vw" }}
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+            <path d="M5 8v-3a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2h-5" />
+            <circle cx="6" cy="14" r="3" />
+            <path d="M4.5 17l-1.5 5l3 -1.5l3 1.5l-1.5 -5" />
+          </svg>
+          <p className="text-center text-cust2 cursor-default">CV</p>
+          <motion.div
+            animate={{ opacity: cv ? 1 : 0 }}
+            className="text-center text-xl text-cust2 hover:text-cust3"
           >
-            (+62)81806016497
-          </Transition>
-        </div> */}
-        <div className="pt-4 pr-6">
-          <button
-            onClick={() => setIsShowing((isShowing) => !isShowing)}
-            className="w-2/5  py-2 pl-5 rounded-r-lg flex bg-cust2 hover:bg-cust3 hover:text-cust1"
-            style={{ fontSize: "4vw", fontFamily:"Catamaran" }}
-          >
-            Take my CV ▼
-          </button>
-          <Transition
-            show={isShowing}
-            enter="transform transition ease-in-out duration-500 sm:duration-700"
-            enterFrom="-translate-x-full"
-            enterTo="translate-x-0"
-            leave="transform transition ease-in-out duration-500 sm:duration-700"
-            leaveFrom="translate-x-0"
-            leaveTo="-translate-x-full"
-            className="w-3/5 mt-2 py-2 pl-5 rounded-r-lg bg-cust2"
-            style={{ fontSize: "4vw", fontFamily:"Catamaran" }}
-          >
-            <a className=' hover:text-cust3' style={{fontFamily:"Catamaran"}} href='https://www.canva.com/design/DAFEaaSleSA/l-QdRSm6sqfqKsK4mJpN7g/view?utm_content=DAFEaaSleSA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton' target='_blank'> Canva Link</a>
-          </Transition>
+            <a href={jacv} target="_blank">
+              Link to CV
+            </a>
+          </motion.div>
         </div>
-      </div>
-    </motion.div>
+        <div className="group m-2 pt-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-linkedin stroke-cust3 group-hover:stroke-cust1 transition active:translate-y-4"
+            width="175"
+            height="175"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#00abfb"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            onClick={() => {
+              setLinkedin(!linkedin);
+            }}
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <rect x="4" y="4" width="16" height="16" rx="2" />
+            <line x1="8" y1="11" x2="8" y2="16" />
+            <line x1="8" y1="8" x2="8" y2="8.01" />
+            <line x1="12" y1="16" x2="12" y2="11" />
+            <path d="M16 16v-3a2 2 0 0 0 -4 0" />
+          </svg>
+          <p className="text-center text-cust2 cursor-default">LinkedIn</p>
+          <div className="text-center text-xl text-cust2 hover:text-cust3">
+            <motion.a
+              animate={{ opacity: linkedin ? 1 : 0 }}
+              className=""
+              href="https://www.linkedin.com/in/jovito-addo-70415a240/"
+              target="_blank"
+            >
+              Link to LinkedIn
+            </motion.a>
+          </div>
+        </div>
+        <div className="group m-2 pt-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon icon-tabler icon-tabler-brand-github stroke-cust3 group-hover:stroke-cust1 transition active:translate-y-4"
+            width="175"
+            height="175"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="#00abfb"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            onClick={() => {
+              setGithub(!github);
+            }}
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+          </svg>
+          <p className="text-center text-cust2 cursor-default">Github</p>
+          <div className="text-center text-xl text-cust2 hover:text-cust3">
+            <motion.a
+              animate={{ opacity: github ? 1 : 0 }}
+              href="https://github.com/JovitoAddo"
+              target="_blank"
+            >
+              Link to Github
+            </motion.a>
+          </div>
+        </div>
+      </motion.div>
+    </div>
   );
 }
 

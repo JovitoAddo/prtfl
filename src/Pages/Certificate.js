@@ -3,12 +3,7 @@ import certificate from "../Assets/certificate.png";
 import { motion } from "framer-motion";
 
 function Certificate() {
-  function HandleClick() {
-    window.open(
-      "https://network.impactbyte.com/certificate/jovito-addo",
-      "_blank"
-    );
-  }
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -18,12 +13,13 @@ function Certificate() {
       className="grid justify-items-center bg-cust4 pb-3 w-full"
     >
       
-      <div
-        onClick={HandleClick}
+      <a
+        href="https://network.impactbyte.com/certificate/jovito-addo"
+        target="_blank"
         className="hover:cursor-pointer transition hover:translate-y-1 mx-auto flex justify-center"
       >
         <img src={certificate} className="h-5/6 hover:opacity-60 rounded" />
-      </div>
+      </a>
     </motion.div>
   );
 }
