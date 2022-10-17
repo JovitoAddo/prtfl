@@ -46,22 +46,20 @@ function Projects() {
             Project Duration: 2 Week.
           </p>
           <div className="flex justify-around p-2">
-            <button
-              onClick={() => {
-                window.open("https://pitchpls.netlify.app/", "_blank");
-              }}
+            <a
+              href="https://pitchpls.netlify.app/"
+              target="_blank"
               className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Preview Site
-            </button>
-            <button
-              onClick={() => {
-                window.open("https://youtu.be/bUSL2_VE8GM", "_blank");
-              }}
+            </a>
+            <a
+            href="https://youtu.be/bUSL2_VE8GM"
+            target="_blank"
               className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Youtube
-            </button>
+            </a>
           </div>
         </div>
       </motion.div>
@@ -99,22 +97,20 @@ function Projects() {
             Project Duration: 2 Week.
           </p>
           <div className="flex justify-around p-2">
-            <button
-              onClick={() => {
-                window.open("https://catluv.netlify.app/", "_blank");
-              }}
+            <a
+            href="https://catluv.netlify.app/"
+            target="_blank"
               className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Preview Site
-            </button>
-            <button
-              onClick={() => {
-                window.open("https://youtu.be/hHHztHY3vxw", "_blank");
-              }}
+            </a>
+            <a 
+            href="https://youtu.be/hHHztHY3vxw"
+            target="_blank"
               className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Youtube
-            </button>
+            </a>
           </div>
         </div>
       </motion.div>
@@ -151,17 +147,13 @@ function Projects() {
             Project Duration: 2 Week.
           </p>
           <div className="flex justify-around p-2">
-            <button
-              onClick={() => {
-                window.open(
-                  "https://haku-library-api.herokuapp.com/",
-                  "_blank"
-                );
-              }}
+            <a
+            href="https://haku-library-api.herokuapp.com/"
+            target="_blank"
               className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Preview Site
-            </button>
+            </a>
           </div>
         </div>
       </motion.div>
@@ -199,17 +191,13 @@ function Projects() {
             Project Duration: 5 days.
           </p>
           <div className="flex justify-around p-2">
-            <button
-              onClick={() => {
-                window.open(
-                  "https://buahtangankelompok1.netlify.app/",
-                  "_blank"
-                );
-              }}
+            <a 
+            href="https://buahtangankelompok1.netlify.app/"
+            target="_blank"
               className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Preview Site
-            </button>
+            </a>
           </div>
         </div>
       </motion.div>
