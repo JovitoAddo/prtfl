@@ -14,14 +14,14 @@ function Contacts() {
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
-        viewport={{ once: false}}
+        viewport={{ once: false }}
         transition={{ duration: 1 }}
         className="grid justify-around lg:flex"
       >
-        <div className="group m-2 pt-4  ">
+        <div className="group m-2 pt-4 grid justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="icon icon-tabler icon-tabler-mail stroke-cust3 group-hover:stroke-cust1 transition active:translate-y-4"
+            class="icon icon-tabler icon-tabler-mailbox stroke-cust3 group-hover:stroke-cust1 transition active:translate-y-4"
             width="175"
             height="175"
             viewBox="0 0 24 24"
@@ -35,9 +35,11 @@ function Contacts() {
             }}
           >
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-            <rect x="3" y="5" width="18" height="14" rx="2" />
-            <polyline points="3 7 12 13 21 7" />
+            <path d="M10 21v-6.5a3.5 3.5 0 0 0 -7 0v6.5h18v-6a4 4 0 0 0 -4 -4h-10.5" />
+            <path d="M12 11v-8h4l2 2l-2 2h-4" />
+            <path d="M6 15h1" />
           </svg>
+        
           <p className="text-center text-cust2 cursor-default">Email</p>
           <motion.p
             animate={{ opacity: email ? 1 : 0 }}
@@ -46,7 +48,7 @@ function Contacts() {
             jovitoaddo@gmail
           </motion.p>
         </div>
-        <div className="group m-2 pt-4">
+        <div className="group m-2 pt-4 grid justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-phone-call stroke-cust3 group-hover:stroke-cust1 transition active:translate-y-4"
@@ -75,7 +77,7 @@ function Contacts() {
             +6281806016497
           </motion.p>
         </div>
-        <div className="group m-2 pt-4">
+        <div className="group m-2 pt-4 grid justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-file-certificate stroke-cust3 group-hover:stroke-cust1 transition active:translate-y-4"
@@ -107,7 +109,7 @@ function Contacts() {
             </a>
           </motion.div>
         </div>
-        <div className="group m-2 pt-4">
+        <div className="group m-2 pt-4 grid justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-linkedin stroke-cust3 group-hover:stroke-cust1 transition active:translate-y-4"
@@ -142,7 +144,7 @@ function Contacts() {
             </motion.a>
           </div>
         </div>
-        <div className="group m-2 pt-4">
+        <div className="group m-2 pt-4 grid justify-center">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="icon icon-tabler icon-tabler-brand-github stroke-cust3 group-hover:stroke-cust1 transition active:translate-y-4"
