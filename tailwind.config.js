@@ -24,6 +24,10 @@ module.exports = {
       cust3: "#FFB085",
       cust4: "#90AACB",
       cust5: "#6b91c2",
+      // cust1: "#041C32",
+      // cust2: "#04293A",
+      // cust3:"#064663",
+      // cust4:"#ECB365"
     },
   },
   plugins: [
