@@ -7,15 +7,13 @@ import { motion } from "framer-motion";
 
 function Projects() {
   return (
-    <div
-      className="grid p-2 bg-cust5"
-    >
+    <div className="grid p-2 bg-cust5">
       {/* projectdiv */}
       <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.3 }}
-      transition={{ duration: 1 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 1 }}
         as="outdiv"
         className="grid items-center justify-items-center min-w-full min-h-fit pb-10 md:flex"
       >
@@ -54,8 +52,8 @@ function Projects() {
               Preview Site
             </a>
             <a
-            href="https://youtu.be/bUSL2_VE8GM"
-            target="_blank"
+              href="https://youtu.be/bUSL2_VE8GM"
+              target="_blank"
               className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Youtube
@@ -65,10 +63,10 @@ function Projects() {
       </motion.div>
       {/* different project */}
       <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.3 }}
-      transition={{ duration: 1 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 1 }}
         as="outdiv"
         className="grid items-center justify-items-center min-w-full min-h-fit pb-10 md:flex"
       >
@@ -98,15 +96,15 @@ function Projects() {
           </p>
           <div className="flex justify-around p-2">
             <a
-            href="https://catluv.netlify.app/"
-            target="_blank"
+              href="https://catluv.netlify.app/"
+              target="_blank"
               className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Preview Site
             </a>
-            <a 
-            href="https://youtu.be/hHHztHY3vxw"
-            target="_blank"
+            <a
+              href="https://youtu.be/hHHztHY3vxw"
+              target="_blank"
               className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Youtube
@@ -116,10 +114,10 @@ function Projects() {
       </motion.div>
       {/* different project */}
       <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.3 }}
-      transition={{ duration: 1 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 1 }}
         as="outdiv"
         className="grid items-center justify-items-center min-w-full min-h-fit pb-10 md:flex"
       >
@@ -148,8 +146,8 @@ function Projects() {
           </p>
           <div className="flex justify-around p-2">
             <a
-            href="https://haku-library-api.herokuapp.com/"
-            target="_blank"
+              href="https://haku-library-api.herokuapp.com/"
+              target="_blank"
               className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Preview Site
@@ -159,10 +157,10 @@ function Projects() {
       </motion.div>
       {/* different project */}
       <motion.div
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      viewport={{ once: false, amount: 0.3 }}
-      transition={{ duration: 1 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: false, amount: 0.3 }}
+        transition={{ duration: 1 }}
         as="outdiv"
         className="grid items-center justify-items-center min-w-full min-h-fit pb-10 md:flex"
       >
@@ -180,9 +178,10 @@ function Projects() {
             BuahTangan
           </h1>
           <p className="prose text-cust1 text-lg text-left cursor-default p-2 font-catamaran">
-            A simple HTML and CSS website, it's a first project that my team
-            created since learning frontend in a month. Half of the content in
-            this website dependent on a mockAPI that accidentally got deleted.
+            !DISCLAIMER: Half of the content in this website dependent on a
+            mockAPI that accidentally got deleted. A simple HTML and CSS
+            website, it's a first project that my team created since learning
+            frontend in a month.
           </p>
           <p className="prose text-cust2 text-lg text-left cursor-default p-2 font-catamaran">
             An eCommerce website for buying regional stuff and food.
@@ -191,9 +190,9 @@ function Projects() {
             Project Duration: 5 days.
           </p>
           <div className="flex justify-around p-2">
-            <a 
-            href="https://buahtangankelompok1.netlify.app/"
-            target="_blank"
+            <a
+              href="https://buahtangankelompok1.netlify.app/"
+              target="_blank"
               className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Preview Site
