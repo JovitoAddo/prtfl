@@ -10,7 +10,7 @@ function Certificate() {
       whileInView={{ opacity: 1 }}
       viewport={{once:false, amount: 0.3}}
       transition={{ duration: 1}}
-      className="grid justify-items-center bg-cust4 pb-3 w-full"
+      className="grid justify-items-center bg-cust4 dark:bg-custDark3 pb-3 w-full"
     >
       
       <a

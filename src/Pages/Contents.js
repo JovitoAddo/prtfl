@@ -146,47 +146,68 @@ function Contents() {
         // transition={{duration:3}}
         className="mx-auto min-w-full"
       >
-        <div className="flex justify-center text-5xl text-cust2 pb-16 bg-cust5 dark:bg-custDark4 dark:text-custDark3 cursor-default">
+        <div className="flex justify-center text-5xl text-cust2 pb-16 bg-cust5 dark:bg-custDark4 cursor-default">
           Past Projects
         </div>
 
         <Projects />
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      {(theme === "dark") ? <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#918E87"
+          fill-opacity="1"
+          d="M0,160L1440,256L1440,320L0,320Z"
+        ></path>
+      </svg> : <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#90AACB"
           fill-opacity="1"
           d="M0,160L1440,256L1440,320L0,320Z"
         ></path>
-      </svg>
+      </svg>}
 
-      <div id="certificate" className="bg-cust4 ">
+      <div id="certificate" className="bg-cust4 dark:bg-custDark3">
         <p className="flex justify-center pb-3 pt-5 text-5xl text-cust2 cursor-default">
           Certificate
         </p>
         <Certificate />
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+
+      {(theme === "dark")?<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#918E87"
+          fill-opacity="1"
+          d="M0,288L1440,0L1440,0L0,0Z"
+        ></path>
+      </svg>:<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#90AACB"
           fill-opacity="1"
           d="M0,288L1440,0L1440,0L0,0Z"
         ></path>
-      </svg>
+      </svg>}
 
-      <div id="contacts" className="bg-cust5">
+      <div id="contacts" className="bg-cust5 dark:bg-custDark4">
         <p className="flex justify-center pb-3 text-5xl text-cust2 cursor-default">
           Contact Me
         </p>
         <Contacts />
       </div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      
+      {(theme === "dark")? <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#675A54"
+          fill-opacity="1"
+          d="M0,224L1440,96L1440,0L0,0Z"
+        ></path>
+      </svg>: <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#6b91c2"
           fill-opacity="1"
           d="M0,224L1440,96L1440,0L0,0Z"
         ></path>
-      </svg>
+      </svg>}
+
       {/* <div>
         <Counter/>
       </div> */}
@@ -215,7 +236,7 @@ function Contents() {
           </svg>
         </Link>
       </div>
-      <button className="fixed top-1/2 right-10 z-50" onClick={handleSwitch}>
+      <button className="fixed right-10 z-50" onClick={handleSwitch}>
         {theme === "dark" ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"

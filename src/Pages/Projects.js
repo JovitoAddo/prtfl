@@ -22,7 +22,7 @@ function Projects() {
             src={pitch}
             className="rounded opacity-100 group-hover:opacity-40"
           />
-          <h1 className="absolute pt-5 text-cust3 invisible group-hover:visible text-6xl cursor-default">
+          <h1 className="absolute pt-5 text-cust3 dark:text-custDark5 invisible group-hover:visible text-6xl cursor-default">
             Pitchpls!
           </h1>
         </div>
@@ -40,21 +40,21 @@ function Projects() {
             It's a crowdfunding website with tiktok like presentation for better
             discoverability.
           </p>
-          <p className="prose text-cust3 text-lg text-left cursor-default p-2 font-catamaran">
+          <p className="prose text-cust3 dark:text-custDark5 text-lg text-left cursor-default p-2 font-catamaran">
             Project Duration: 2 Week.
           </p>
           <div className="flex justify-around p-2">
             <a
               href="https://pitchpls.netlify.app/"
               target="_blank"
-              className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
+              className="m-2 text-cust1 hover:text-cust3 dark:hover:text-custDark5 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Preview Site
             </a>
             <a
               href="https://youtu.be/bUSL2_VE8GM"
               target="_blank"
-              className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
+              className="m-2 text-cust1 hover:text-cust3 dark:hover:text-custDark5 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Youtube
             </a>
@@ -75,12 +75,12 @@ function Projects() {
             src={catluv}
             className="rounded opacity-100 group-hover:opacity-40"
           />
-          <h1 className="absolute pt-5 text-cust3 invisible group-hover:visible text-6xl cursor-default">
+          <h1 className="absolute pt-5 text-cust3 dark:text-custDark5 invisible group-hover:visible text-6xl cursor-default">
             CatLuv
           </h1>
         </div>
         <div className="grid w-3/5 justify-center object-fill">
-          <h1 className="prose text-center text-cust2 text-5xl pb-1 cursor-default font-catamaran">
+          <h1 className="prose text-center text-cust2  text-5xl pb-1 cursor-default font-catamaran">
             CatLuv
           </h1>
           <p className="prose text-cust1 text-lg text-left cursor-default p-2 font-catamaran">
@@ -91,21 +91,21 @@ function Projects() {
             An information website about cats with better UI/UX than other cats
             info site.
           </p>
-          <p className="prose text-cust3 text-lg text-left cursor-default p-2 font-catamaran">
+          <p className="prose text-cust3 dark:text-custDark5 text-lg text-left cursor-default p-2 font-catamaran">
             Project Duration: 2 Week.
           </p>
           <div className="flex justify-around p-2">
             <a
               href="https://catluv.netlify.app/"
               target="_blank"
-              className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
+              className="m-2 text-cust1 hover:text-cust3 dark:hover:text-custDark5 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Preview Site
             </a>
             <a
               href="https://youtu.be/hHHztHY3vxw"
               target="_blank"
-              className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
+              className="m-2 text-cust1 hover:text-cust3 dark:hover:text-custDark5 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Youtube
             </a>
@@ -126,7 +126,7 @@ function Projects() {
             src={haku}
             className="rounded opacity-100 group-hover:opacity-40"
           />
-          <h1 className="absolute pt-5 text-cust3 invisible group-hover:visible text-6xl cursor-default">
+          <h1 className="absolute pt-5 text-cust3 dark:text-custDark5 invisible group-hover:visible text-6xl cursor-default">
             Haku API
           </h1>
         </div>
@@ -141,14 +141,14 @@ function Projects() {
             A RESTful API for library website for admin to add, remove or edit
             data from database.
           </p>
-          <p className="prose text-cust3 text-lg text-left cursor-default p-2 font-catamaran">
+          <p className="prose text-cust3 dark:text-custDark5 text-lg text-left cursor-default p-2 font-catamaran">
             Project Duration: 2 Week.
           </p>
           <div className="flex justify-around p-2">
             <a
               href="https://haku-library-api.herokuapp.com/"
               target="_blank"
-              className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
+              className="m-2 text-cust1 hover:text-cust3 dark:hover:text-custDark5 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Preview Site
             </a>
@@ -169,7 +169,7 @@ function Projects() {
             src={buah}
             className="rounded opacity-100 group-hover:opacity-40"
           />
-          <h1 className="absolute pt-5 text-cust3 invisible group-hover:visible text-4xl cursor-default md:text-6xl">
+          <h1 className="absolute pt-5 text-cust3 dark:text-custDark5 invisible group-hover:visible text-4xl cursor-default md:text-6xl">
             BuahTangan
           </h1>
         </div>
@@ -186,14 +186,14 @@ function Projects() {
           <p className="prose text-cust2 text-lg text-left cursor-default p-2 font-catamaran">
             An eCommerce website for buying regional stuff and food.
           </p>
-          <p className="prose text-cust3 text-lg text-left cursor-default p-2 font-catamaran">
+          <p className="prose text-cust3 dark:text-custDark5 text-lg text-left cursor-default p-2 font-catamaran">
             Project Duration: 5 days.
           </p>
           <div className="flex justify-around p-2">
             <a
               href="https://buahtangankelompok1.netlify.app/"
               target="_blank"
-              className="m-2 text-cust1 hover:text-cust3 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
+              className="m-2 text-cust1 hover:text-cust3 dark:hover:text-custDark5 transition hover:translate-y-1 hover:shadow-lg border-2 border-dashed rounded p-2"
             >
               Preview Site
             </a>
