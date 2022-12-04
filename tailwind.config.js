@@ -1,9 +1,8 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  darkmode: "class",
   theme: {
-    extend: {
-        
-    },
+    extend: {},
     fontFamily: {
       sans: ["ui-sans-serif", "system-ui"],
       serif: ["ui-serif", "Georgia"],
@@ -13,7 +12,7 @@ module.exports = {
       cormorant: ["Cormorant", "serif"],
       annie: ["Annie Use Your Telescope", "cursive"],
       MMD: ["Major Mono Display", "monospace"],
-      monoton: ["Monoton", "cursive"]
+      monoton: ["Monoton", "cursive"],
     },
     colors: {
       transparent: "transparent",
@@ -24,10 +23,13 @@ module.exports = {
       cust3: "#FFB085",
       cust4: "#90AACB",
       cust5: "#6b91c2",
-      // cust1: "#041C32",
-      // cust2: "#04293A",
-      // cust3:"#064663",
-      // cust4:"#ECB365"
+      custNight: "#0f225c",
+      custDay: "#e3af12",
+      custDark1: "#111926",
+      custDark2: "#202F46",
+      custDark3: "#918E87",
+      custDark4: "#675A54",
+      custDark5: "#5e84db",
     },
   },
   plugins: [
@@ -37,5 +39,5 @@ module.exports = {
     require("@tailwindcss/aspect-ratio"),
     require("daisyui"),
   ],
-  darkMode: 'class',
+  darkMode: "class",
 };

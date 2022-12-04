@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 function Projects() {
   return (
-    <div className="grid p-2 bg-cust5">
+    <div className="grid p-2 bg-cust5 dark:bg-custDark4">
       {/* projectdiv */}
       <motion.div
         initial={{ opacity: 0 }}
