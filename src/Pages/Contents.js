@@ -214,7 +214,7 @@ function Contents() {
       {/* <div>
         <PostList/>
       </div> */}
-      <div className="fixed bottom-10 right-10">
+      <div className="fixed bottom-10 right-1">
         <Link to="#top">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -236,7 +236,7 @@ function Contents() {
           </svg>
         </Link>
       </div>
-      <button className="fixed right-10 z-50" onClick={handleSwitch}>
+      <button className="fixed right-1 z-50" onClick={handleSwitch}>
         {theme === "dark" ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
